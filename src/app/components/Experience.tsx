@@ -6,7 +6,7 @@ import { experiences } from "@/constants/experience";
 export default function Experience() {
   return (
     <div className="pt-12 w-full">
-      <h3 className="text-xl font-semibold">Work Experience</h3>
+      <h3 className="text-xl font-semibold">Experience</h3>
       <div className="flex flex-col gap-4 mt-3">
         {experiences.map((experience) => {
           return (

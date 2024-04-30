@@ -27,7 +27,7 @@ export const experiences = [
     id: 4,
     src: "/images/utn.png",
     alt: "utn-logo",
-    position: "Intern",
+    position: "Intern I+D",
     company: "Universidad Tecnológica Nacional",
     date: "Jul 2020 - Dec 2020",
   },
