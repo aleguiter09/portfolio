@@ -1,13 +1,13 @@
-import React from "react";
-import Card from "./Card";
+import "./Education.scss";
+import Card from "../Card/Card";
 import Image from "next/image";
 import { education } from "@/constants/education";
 
 export default function Education() {
   return (
-    <div className="md:pt-12 w-full">
+    <div className="education">
       <h3 className="text-xl font-semibold">Education</h3>
-      <div className="flex flex-col gap-4 mt-3">
+      <div className="edu-container">
         {education.map((edu) => {
           return (
             <Card key={edu.id}>

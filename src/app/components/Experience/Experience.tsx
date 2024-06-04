@@ -1,13 +1,13 @@
-import React from "react";
-import Card from "./Card";
+import "./Experience.scss";
+import Card from "../Card/Card";
 import Image from "next/image";
 import { experiences } from "@/constants/experience";
 
 export default function Experience() {
   return (
-    <div className="pt-12 w-full">
+    <div className="experience">
       <h3 className="text-xl font-semibold">Experience</h3>
-      <div className="flex flex-col gap-4 mt-3">
+      <div className="exp-container">
         {experiences.map((experience) => {
           return (
             <Card key={experience.id}>
@@ -17,10 +17,10 @@ export default function Experience() {
                 width="90"
                 height="90"
               />
-              <div className="flex flex-col p-2">
-                <h4 className="font-semibold">{experience.position}</h4>
-                <p className="text-gray-700">{experience.company}</p>
-                <p className="text-gray-700">{experience.date}</p>
+              <div className="exp-description">
+                <h4 className="exp-title">{experience.position}</h4>
+                <p className="exp-company">{experience.company}</p>
+                <p className="exp-date">{experience.date}</p>
               </div>
             </Card>
           );

@@ -1,0 +1,12 @@
+@import "../../styles/mixins";
+
+.Home {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 3rem;
+
+    @include md {
+        flex-direction: column;
+    }
+}

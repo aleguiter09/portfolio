@@ -1,0 +1,30 @@
+.presentation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .presentation__image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .presentation__text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .presentation__title {
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        .presentation__description {
+            font-weight: 500;
+            color: gray;
+        }
+    }
+}

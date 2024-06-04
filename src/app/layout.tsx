@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./layout.scss";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -11,10 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`pt-8 pb-4 px-3 ${inter.className} antialiased bg-gray-100 text-gray-900`}
-      >
-        <main className="max-w-screen-xl mx-auto">{children}</main>
+      <body className={`layout ${inter.className}`}>
+        <main className="main">{children}</main>
       </body>
     </html>
   );
