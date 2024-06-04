@@ -5,29 +5,25 @@ import { projects } from "@/constants/projects";
 
 export default function Projects() {
   return (
-    <div className="projects w-full">
-      <h3 className="text-xl font-semibold">Projects</h3>
-      <div className="pro-container">
+    <section className="projects">
+      <h3 className="">Projects</h3>
+      <div className="projects__container">
         {projects.map((edu) => {
           return (
             <Card key={edu.id}>
               <Image
-                className="pro-image"
+                className="projects__image"
                 src={edu.src}
                 alt={edu.alt}
                 width="90"
                 height="90"
               />
-              <div className="pro-details">
-                <h4 className="font-semibold">{edu.title}</h4>
-                <p className="text-gray-700 mb-2">{edu.description}</p>
-                <div className="pro-stack">
+              <div className="projects__details">
+                <p className="">{edu.description}</p>
+                <div className="projects__stack">
                   {edu.stack.map((stack) => {
                     return (
-                      <span
-                        key={stack}
-                        className="pro-tech text-xs rounded-md p-1.5 bg-gray-100 text-gray-600 font-semibold"
-                      >
+                      <span key={stack} className="projects__tech">
                         {stack}
                       </span>
                     );
@@ -38,6 +34,6 @@ export default function Projects() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

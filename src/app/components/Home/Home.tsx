@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Presentation />
-      <div className="Home">
+      <div className="home">
         <Experience />
         <Education />
         <Projects />
