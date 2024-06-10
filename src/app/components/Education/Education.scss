@@ -1,18 +1,18 @@
 @import "../../styles/mixins";
 
 .education {
-    width: 100%;
+  width: 100%;
 
-    .education__container {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 0.75rem;
+  .education__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.75rem;
 
-        .education__details {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
+    .education__details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
     }
+  }
 }

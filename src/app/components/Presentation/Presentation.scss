@@ -1,30 +1,32 @@
 .presentation {
+  position: sticky;
+  top: 0;
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+
+  .presentation__image {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .presentation__text {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
 
-    .presentation__image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        overflow: hidden;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .presentation__title {
+      color: #333;
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 0;
     }
 
-    .presentation__text {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-
-        .presentation__title {
-            color: #333;
-            font-weight: 700;
-            margin-bottom: 0;
-        }
-
-        .presentation__description {
-            font-weight: 500;
-            color: gray;
-        }
+    .presentation__description {
+      font-weight: 500;
+      color: gray;
     }
+  }
 }

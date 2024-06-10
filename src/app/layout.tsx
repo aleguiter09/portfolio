@@ -1,8 +1,11 @@
 import "./globals.css";
 import "./layout.scss";
-import { Inter } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Noto_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Portfolio",

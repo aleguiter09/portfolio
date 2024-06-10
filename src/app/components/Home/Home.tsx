@@ -6,13 +6,9 @@ import "./Home.scss";
 
 export default function Home() {
   return (
-    <>
+    <div className="home">
       <Presentation />
-      <div className="home">
-        <Experience />
-        <Education />
-        <Projects />
-      </div>
-    </>
+      <Experience />
+    </div>
   );
 }
