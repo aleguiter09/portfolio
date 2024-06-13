@@ -1,16 +1,26 @@
+@import "../../styles/mixins";
+
 .presentation {
-  position: sticky;
-  top: 0;
   display: flex;
-  gap: 20px;
-  max-width: 1200px;
-  padding: 2rem 1rem;
+  gap: 40px;
+  max-width: calc(1200px + 3rem);
+  padding: 2rem 1.5rem;
   margin: 0 auto;
 
+  @include md {
+    padding: 2rem 1.5rem;
+  }
+
   .presentation__image {
-    border-radius: 50%;
-    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    border-radius: 2.2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    @include md {
+      width: 150px;
+      height: 150px;
+    }
   }
 
   .presentation__text {
@@ -20,13 +30,31 @@
     .presentation__title {
       color: #333;
       font-weight: 600;
-      font-size: 1.8rem;
-      margin-bottom: 0;
+      font-size: 2rem;
+      line-height: 1.3;
+      text-wrap: pretty;
+      margin-bottom: .3rem;
+
+      @include md {
+        font-size: 3rem;
+        line-height: 1.5;
+        margin-bottom: 0;
+      }
     }
 
     .presentation__description {
+      font-size: 1rem;
       font-weight: 500;
       color: gray;
+      text-wrap: pretty;
+      
+      @include md {
+        font-size: 1.3rem;
+      }
+
+      span {
+        font-weight: 600;
+      }
     }
   }
 }

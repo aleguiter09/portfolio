@@ -1,5 +1,4 @@
 import "./Projects.scss";
-import Card from "../Card/Card";
 import Image from "next/image";
 import { projects } from "@/constants/projects";
 
@@ -10,7 +9,7 @@ export default function Projects() {
       <div className="projects__container">
         {projects.map((edu) => {
           return (
-            <Card key={edu.id}>
+            <div key={edu.id}>
               <Image
                 className="projects__image"
                 src={edu.src}
@@ -30,7 +29,7 @@ export default function Projects() {
                   })}
                 </div>
               </div>
-            </Card>
+            </div>
           );
         })}
       </div>

@@ -1,12 +1,8 @@
+@import "../../styles/mixins";
+
 .experience__section {
-  position: sticky;
-  top: 0;
   width: 100%;
-  padding: 2rem 1rem;
-  background-color: black;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  color: white;
+  padding: 0 1.5rem 2rem 1.5rem;
 
   .experience {
     display: flex;
@@ -15,37 +11,96 @@
     margin: 0 auto;
 
     .experience__title {
-      font-size: 3rem;
-      font-weight: 600;
-      line-height: 1.2;
+      font-size: 2.2rem;
     }
 
     .experience__container {
-      margin-left: auto;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-      margin-top: 0.75rem;
-      color: #111827;
-
-      .experience__image {
-        border-radius: 50%;
+      position: relative;
+      border-left: 1px solid gray;
+      margin-top: 2rem;
+      padding: 0;
+      
+      @include md {
+        width: 85%;
       }
 
-      .experience__description {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+      .experience__card {
+        list-style: none;
+        padding: 0 1rem 0 1.5rem;
 
-        .experience__position {
-          font-size: 1.5rem;
-          font-weight: 500;
+        .experience__dot {
+          margin-top: 0.375rem;
+          position: absolute;
+          width: .75rem;
+          height: .75rem;
+          inset-inline-start: -0.375rem;
+          border-radius: 50%;
+          background-color: gray;
         }
 
-        .experience__data {
-          gap: 1rem;
+        .experience__date {
+          font-size: .9rem;
+          font-weight: 500;
           color: gray;
+          line-height: 1.6;
+        }
+
+        .experience__info {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          padding: 1rem 0 2rem 0;
+
+          @include md {
+            gap: 1.5rem;
+            flex-direction: row;
+          }
+      
+          .experience__image {
+            border-radius: 50%;
+          }
+
+          .experience__description {
+            display: flex;
+            flex-direction: column;
+  
+            .experience__position {
+              font-size: 1.3rem;
+            }
+  
+            .experience__data {
+              display: flex;
+              flex-direction: column;
+              gap: 0.8rem;
+
+              @include md {
+                gap: 0.5rem;
+              }
+
+              span {
+                font-size: .85rem;
+                color: gray;
+                margin-bottom: 0.2rem;
+              }
+
+              .experience__stack {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+
+                .experience__tech {
+                  padding: 0.25rem 0.5rem;
+                  border: 1px solid #d1d5db;
+                  border-radius: 0.25rem;
+                  font-size: 0.7rem;
+                  font-weight: 500;
+                  color: #111827;
+                }
+            }
+            }
+          }
         }
       }
     }
