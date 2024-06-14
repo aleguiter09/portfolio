@@ -3,8 +3,8 @@ export const projects = [
     id: 1,
     src: "/images/my-finances.png",
     alt: "my-finances-logo",
-    title: "My finances",
+    title: "Finance Tracker",
     description: "A personal finance app that helps you manage your money.",
-    stack: ["Next.js", "Tailwind CSS", "TypeScript", "Supabase"],
+    stack: ["Next.js", "Tailwind", "TypeScript", "Supabase"],
   },
 ];

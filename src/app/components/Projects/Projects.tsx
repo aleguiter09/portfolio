@@ -4,25 +4,26 @@ import { projects } from "@/constants/projects";
 
 export default function Projects() {
   return (
-    <section className="projects">
-      <h3 className="">Projects</h3>
-      <div className="projects__container">
-        {projects.map((edu) => {
+    <section id="projects" className="projects">
+      <h3 className="projects__title">Projects</h3>
+      <div className="projects__section">
+        {projects.map((project) => {
           return (
-            <div key={edu.id}>
+            <div className="project_container" key={project.id}>
               <Image
-                className="projects__image"
-                src={edu.src}
-                alt={edu.alt}
+                className="project__image"
+                src={project.src}
+                alt={project.alt}
                 width="90"
                 height="90"
               />
-              <div className="projects__details">
-                <p className="">{edu.description}</p>
-                <div className="projects__stack">
-                  {edu.stack.map((stack) => {
+              <div className="project__details">
+                <h4 className="project__title">{project.title}</h4>
+                <p className="project__description">{project.description}</p>
+                <div className="project__stack">
+                  {project.stack.map((stack) => {
                     return (
-                      <span key={stack} className="projects__tech">
+                      <span key={stack} className="project__tech">
                         {stack}
                       </span>
                     );

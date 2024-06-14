@@ -18,7 +18,7 @@ export const experiences = [
     position: "Full Stack Developer",
     company: "Folder IT",
     date: "Sep 2021 - Sep 2023",
-    time: "2 years & 1 month",
+    time: "2 years",
     description:
       "Developed and enhanced both soft and technical skills across diverse projects and technologies. Worked for clients in the agriculture industry, e-commerce and finances.",
     stack: [

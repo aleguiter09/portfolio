@@ -8,7 +8,7 @@ const inter = Noto_Sans({
 });
 
 export const metadata = {
-  title: "Alejandro Guiter",
+  title: "Alejandro Guiter | Software Developer",
   description: "Alejandro Guiter's Porftolio",
 };
 
