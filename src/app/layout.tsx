@@ -10,6 +10,11 @@ const inter = Noto_Sans({
 export const metadata = {
   title: "Alejandro Guiter | Software Developer",
   description: "Alejandro Guiter's Porftolio",
+  icons: {
+    icon: ["/favicon.ico"],
+    apple: ["apple-touch-icon.png"],
+    shortcut: ["apple-touch-icon.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
