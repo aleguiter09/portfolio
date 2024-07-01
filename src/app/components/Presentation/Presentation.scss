@@ -30,7 +30,7 @@
     .presentation__title {
       color: #333;
       font-weight: 600;
-      font-size: 2rem;
+      font-size: 1.4rem;
       line-height: 1.2;
       text-wrap: pretty;
       margin-bottom: .3rem;
@@ -43,7 +43,7 @@
     }
 
     .presentation__description {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 500;
       color: gray;
       text-wrap: pretty;
@@ -54,6 +54,26 @@
 
       span {
         font-weight: 600;
+      }
+    }
+
+    .presentation__location {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.3rem;
+      
+      @include md {
+        margin-top: 1rem;
+      }
+
+      .presentation__location_text {
+        font-size: 0.8rem;
+        color: #808080;
+        
+        @include md {
+          font-size: 0.8rem;
+        }
       }
     }
   }

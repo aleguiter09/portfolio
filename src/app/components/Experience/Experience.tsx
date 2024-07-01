@@ -31,7 +31,7 @@ export default function Experience() {
                     </h4>
                     <div className="experience__data">
                       <span>
-                        @ {experience.company} - {experience.time}
+                        @ {experience.company} - {experience.country}
                       </span>
                       <p>{experience.description}</p>
                       <div className="experience__stack">

@@ -1,4 +1,5 @@
 import "./Presentation.scss";
+import location from "../../../../public/images/location.svg";
 import Image from "next/image";
 
 export default function Presentation() {
@@ -16,6 +17,17 @@ export default function Presentation() {
         <h3 className="presentation__description">
           <span>+4 years</span> as Software Developer
         </h3>
+        <div className="presentation__location">
+          <Image
+            className="presentation__icon"
+            width={15}
+            height={15}
+            loading="lazy"
+            src={location.src}
+            alt="location-icon"
+          />
+          <span className="presentation__location_text">Madrid, Spain</span>
+        </div>
       </div>
     </section>
   );

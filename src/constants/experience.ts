@@ -7,6 +7,7 @@ export const experiences = [
     company: "Izertis",
     date: "Oct 2023 - Present",
     time: "Present",
+    country: "Madrid, Spain",
     description:
       "Currently working as a Frontend Developer developing and maintaining multiple web applications for a client in the fashion industry.",
     stack: ["React", "Next.js", "Typescript", "Sass"],
@@ -19,6 +20,7 @@ export const experiences = [
     company: "Folder IT",
     date: "Sep 2021 - Sep 2023",
     time: "2 years",
+    country: "Santa Fe, Argentina",
     description:
       "Developed and enhanced both soft and technical skills across diverse projects and technologies. Worked for clients in the agriculture industry, e-commerce and finances.",
     stack: [
@@ -40,6 +42,7 @@ export const experiences = [
     company: "Serfe",
     date: "Apr 2021 - Sep 2021",
     time: "6 months",
+    country: "Santa Fe, Argentina",
     description:
       "Development, testing and maintenance of web applications. Worked on several amount of projects from start to finish both alone and in with colleagues of the company.",
     stack: ["React", "Javascript", "Python", "Sass", "Wordpress"],
@@ -52,6 +55,7 @@ export const experiences = [
     company: "Universidad Tecnológica Nacional",
     date: "Jul 2020 - Dec 2020",
     time: "6 months",
+    country: "Santa Fe, Argentina",
     description:
       "Application of AI techniques to the design and analysis of business processes. In charge of the investigation and development of the project.",
     stack: ["Python", "spaCy", "R&D"],
