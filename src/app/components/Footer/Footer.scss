@@ -1,0 +1,7 @@
+@import "../../styles/mixins";
+
+.footer {
+  max-width: calc(1200px + 3rem);
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+}

@@ -1,8 +1,8 @@
-import Link from "next/link";
 import "./globals.css";
 import "./layout.scss";
 import { Noto_Sans } from "next/font/google";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const inter = Noto_Sans({
   weight: "400",
@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className={`layout ${inter.className}`}>
         <Header />
         <main className="main">{children}</main>
+        <Footer />
       </body>
     </html>
   );
