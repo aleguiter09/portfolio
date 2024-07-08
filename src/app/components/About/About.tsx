@@ -20,7 +20,7 @@ export default function About() {
           </div>
           <div className="about__portion">
             <span className="portion__main">+15 projects</span>{" "}
-            <span className="portion__secondary">with big tech companies</span>
+            <span className="portion__secondary">with worldwide companies</span>
           </div>
           <div className="about__portion">
             <span className="portion__main">Based in</span>
