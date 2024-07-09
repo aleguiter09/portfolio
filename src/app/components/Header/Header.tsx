@@ -15,9 +15,9 @@ export default function Header() {
           <li className="navbar__item">
             <Link href="#projects">Projects</Link>
           </li>
-          {/*<li className="navbar__item">
-            <Link href="#contact">Contact</Link>
-          </li>*/}
+          <li className="navbar__item">
+            <Link href="mailto:aleguiter9@gmail.com">Contact</Link>
+          </li>
         </ul>
       </nav>
       <div className="external__icons">

@@ -1,5 +1,6 @@
 import "./Experience.scss";
 import Image from "next/image";
+import Tag from "../Tag/Tag";
 import { experiences } from "@/constants/experience";
 
 export default function Experience() {
@@ -30,17 +31,15 @@ export default function Experience() {
                       {experience.position}
                     </h4>
                     <div className="experience__data">
-                      <span>
+                      <span className="experience__at">
                         @ {experience.company} - {experience.country}
                       </span>
-                      <p>{experience.description}</p>
+                      <p className="experience__detail">
+                        {experience.description}
+                      </p>
                       <div className="experience__stack">
                         {experience.stack.map((stack) => {
-                          return (
-                            <span key={stack} className="experience__tech">
-                              {stack}
-                            </span>
-                          );
+                          return <Tag key={stack} tag_key={stack} />;
                         })}
                       </div>
                     </div>

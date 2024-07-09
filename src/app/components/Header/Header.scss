@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .header {
   max-width: calc(53rem + 3rem);
   padding: 1.5rem;
@@ -11,11 +13,16 @@
       list-style-type: none;
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: 1.3rem;
       padding: 0;
+
+      @include md {
+        gap: 2rem;
+      }
 
       .navbar__item {
         a {
+          font-size: 0.8rem;
           color: #333;
           font-weight: 600;
           text-decoration: none;
@@ -23,6 +30,10 @@
 
           &:hover {
             color: gray;
+          }
+
+          @include md {
+            font-size: 1rem;
           }
         }
       }

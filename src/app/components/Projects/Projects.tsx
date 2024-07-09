@@ -1,5 +1,5 @@
-import Project from "./Project/Project";
 import "./Projects.scss";
+import Project from "./Project/Project";
 import { projects } from "@/constants/projects";
 
 export default function Projects() {

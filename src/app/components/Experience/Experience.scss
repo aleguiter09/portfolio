@@ -79,25 +79,27 @@
                 gap: 0.5rem;
               }
 
-              span {
+              .experience__at {
                 font-size: 0.85rem;
                 color: gray;
                 margin-bottom: 0.2rem;
               }
 
+              .experience__detail {
+                font-size: 0.9rem;
+                line-height: 1.6;
+
+                @include md {
+                  font-size: 1rem;
+                  line-height: 1.5;
+                }
+              }
+
               .experience__stack {
+                margin-top: 0.4rem;
                 display: flex;
                 flex-wrap: wrap;
                 gap: 0.5rem;
-
-                .experience__tech {
-                  padding: 0.25rem 0.5rem;
-                  border: 1px solid #d1d5db;
-                  border-radius: 0.25rem;
-                  font-size: 0.7rem;
-                  font-weight: 500;
-                  color: #111827;
-                }
               }
             }
           }

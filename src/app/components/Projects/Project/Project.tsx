@@ -1,6 +1,7 @@
 import "./Project.scss";
 import Link from "next/link";
 import Image from "next/image";
+import Tag from "../../Tag/Tag";
 
 export default function Project({
   id,
@@ -34,16 +35,16 @@ export default function Project({
           <h4 className="project__title">{title}</h4>
           <div className="project__stack">
             {stack.map((stack: string) => {
-              return (
-                <span key={stack} className="project__tech">
-                  {stack}
-                </span>
-              );
+              return <Tag key={stack} tag_key={stack} />;
             })}
           </div>
           <p className="project__description">{description}</p>
           <div className="project__actions">
-            <Link href={link} target="_blank" className="project__button">
+            <Link
+              href={link}
+              target="_blank"
+              className="project__button primary"
+            >
               Preview
             </Link>
             <Link href={code_link} target="_blank" className="project__button">

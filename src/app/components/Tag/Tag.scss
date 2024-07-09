@@ -1,0 +1,17 @@
+.tag_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  color: #333;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}

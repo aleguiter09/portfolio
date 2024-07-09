@@ -10,7 +10,7 @@ export const experiences = [
     country: "Madrid, Spain",
     description:
       "Currently working as a Frontend Developer developing and maintaining multiple web applications for a client in the fashion industry.",
-    stack: ["React", "Next.js", "Typescript", "Sass"],
+    stack: ["react", "next", "ts", "sass"],
   },
   {
     id: 2,
@@ -24,14 +24,14 @@ export const experiences = [
     description:
       "Developed and enhanced both soft and technical skills across diverse projects and technologies. Worked for clients in the agriculture industry, e-commerce and finances.",
     stack: [
-      "React",
-      "React Native",
-      "Next.js",
-      "Typescript",
-      "Sass",
-      "MongoDB",
-      "Nest.js",
-      "Vue",
+      "react",
+      "react-native",
+      "next",
+      "ts",
+      "sass",
+      "mongo",
+      "nest",
+      "vue",
     ],
   },
   {
@@ -45,7 +45,7 @@ export const experiences = [
     country: "Santa Fe, Argentina",
     description:
       "Development, testing and maintenance of web applications. Worked on several amount of projects from start to finish both alone and in with colleagues of the company.",
-    stack: ["React", "Javascript", "Python", "Sass", "Wordpress"],
+    stack: ["react", "js", "python", "sass", "wordpress"],
   },
   {
     id: 4,
@@ -58,6 +58,6 @@ export const experiences = [
     country: "Santa Fe, Argentina",
     description:
       "Application of AI techniques to the design and analysis of business processes. In charge of the investigation and development of the project.",
-    stack: ["Python", "spaCy", "R&D"],
+    stack: ["python", "spacy", "research"],
   },
 ];
