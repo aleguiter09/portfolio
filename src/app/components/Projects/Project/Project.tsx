@@ -40,15 +40,15 @@ export default function Project({
           </div>
           <p className="project__description">{description}</p>
           <div className="project__actions">
+            <Link href={code_link} target="_blank" className="project__button">
+              Code
+            </Link>
             <Link
               href={link}
               target="_blank"
               className="project__button primary"
             >
               Preview
-            </Link>
-            <Link href={code_link} target="_blank" className="project__button">
-              Code
             </Link>
           </div>
         </div>

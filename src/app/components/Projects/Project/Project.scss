@@ -29,7 +29,11 @@
       gap: 1rem;
 
       .project__title {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
+
+        @include md {
+          font-size: 1.7rem;
+        }
       }
 
       .project__stack {
@@ -40,6 +44,13 @@
 
       .project__description {
         text-wrap: pretty;
+        font-size: 0.9rem;
+        line-height: 1.6;
+
+        @include md {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
       }
 
       .project__actions {
@@ -52,13 +63,17 @@
           width: 50%;
           text-align: center;
           color: #333;
-          font-weight: 600;
           text-decoration: none;
           transition: all 0.3s ease;
           cursor: pointer;
           padding: 0.5rem 1rem;
           border-radius: 0.5rem;
           border: 1px solid gray;
+
+          &.primary {
+            background-color: #2563eb;
+            color: white;
+          }
 
           &:hover {
             transform: translateY(-2px);
