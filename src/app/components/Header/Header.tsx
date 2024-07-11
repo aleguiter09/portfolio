@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import github from "../../assets/icons/github.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
+import download from "../../assets/icons/download.svg";
 
 export default function Header() {
   return (
@@ -14,9 +15,6 @@ export default function Header() {
           </li>
           <li className="navbar__item">
             <Link href="#projects">Projects</Link>
-          </li>
-          <li className="navbar__item">
-            <Link href="mailto:aleguiter9@gmail.com">Contact</Link>
           </li>
         </ul>
       </nav>
@@ -31,8 +29,20 @@ export default function Header() {
           <Image
             src={linkedin.src}
             alt="linkedin-icon"
-            width={25}
-            height={25}
+            width={20}
+            height={20}
+          />
+        </Link>
+        <Link
+          href="/files/aguiter-cv-english.pdf"
+          target="_blank"
+          download={"Alejandro Guiter - CV"}
+        >
+          <Image
+            src={download.src}
+            alt="download-icon"
+            width={20}
+            height={20}
           />
         </Link>
       </div>

@@ -1,7 +1,9 @@
+"use client";
 import "./Project.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Tag from "../../Tag/Tag";
+import { useEffect } from "react";
 
 export default function Project({
   id,
@@ -13,6 +15,25 @@ export default function Project({
   stack,
   images,
 }) {
+  useEffect(() => {
+    const content = document.querySelector(".project__images");
+
+    if (content) {
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("project__images--show");
+            }
+          });
+        },
+        { threshold: 0.3 }
+      );
+
+      observer.observe(content);
+    }
+  }, []);
+
   return (
     <div className="project_container" key={id}>
       <div className="project__images">

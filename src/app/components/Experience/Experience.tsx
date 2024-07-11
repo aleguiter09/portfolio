@@ -10,13 +10,16 @@ export default function Experience() {
     const content = document.querySelectorAll(".experience__info");
 
     if (content) {
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("experience__info--show");
-          }
-        });
-      });
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("experience__info--show");
+            }
+          });
+        },
+        { threshold: 0.3 }
+      );
 
       content.forEach((el) => {
         observer.observe(el);
