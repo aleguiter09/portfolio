@@ -1,9 +1,31 @@
+"use client";
 import "./Experience.scss";
 import Image from "next/image";
 import Tag from "../Tag/Tag";
 import { experiences } from "@/constants/experience";
+import { useEffect } from "react";
 
 export default function Experience() {
+  useEffect(() => {
+    const content = document.querySelectorAll(".experience__info");
+
+    if (content) {
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("experience__info--show");
+          } else {
+            // entry.target.classList.remove("experience__info--show");
+          }
+        });
+      });
+
+      content.forEach((el) => {
+        observer.observe(el);
+      });
+    }
+  }, []);
+
   return (
     <section id="experience" className="experience__section">
       <div className="experience">

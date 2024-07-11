@@ -52,6 +52,7 @@
           flex-direction: column;
           gap: 1rem;
           padding: 1rem 0 2rem 0;
+          opacity: 0;
 
           @include md {
             gap: 1.5rem;
@@ -100,6 +101,19 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 0.5rem;
+              }
+            }
+          }
+
+          &--show {
+            animation: 0.5s fade-in forwards;
+
+            @keyframes fade-in {
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
               }
             }
           }
