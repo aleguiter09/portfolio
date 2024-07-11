@@ -29,7 +29,7 @@ const TAG = {
     icon: next,
   },
   tailwind: {
-    name: "Tailwind",
+    name: "Tailwind CSS",
     icon: tailwind,
   },
   ts: {
@@ -45,11 +45,11 @@ const TAG = {
     icon: mongo,
   },
   nest: {
-    name: "Nest",
+    name: "Nest.js",
     icon: nest,
   },
   vue: {
-    name: "Vue",
+    name: "Vue.js",
     icon: vue,
   },
   js: {

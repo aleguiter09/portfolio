@@ -14,8 +14,6 @@ export default function Experience() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("experience__info--show");
-          } else {
-            // entry.target.classList.remove("experience__info--show");
           }
         });
       });
