@@ -1,14 +1,14 @@
 export const projects = [
   {
     id: 1,
-    src: "/images/my-finances.png",
-    alt: "my-finances-logo",
+    src: "/images/savv.png",
+    alt: "savv-logo",
     title: "Savv - Finance tracker",
-    link: "https://myfinances.vercel.app/",
-    code_link: "https://github.com/aleguiter09/my-finances",
+    link: "https://savv-finances.vercel.app/",
+    code_link: "https://github.com/aleguiter09/savv",
     description:
       "Savv it's a finance tracking application that allows users to record and categorize their income and expenses, and monitor account balances to facilitate money management and planning.",
     stack: ["next", "tailwind", "ts", "supabase"],
-    images: ["/images/my-finances/1.png", "/images/my-finances/2.png"],
+    images: ["/images/savv/1.png", "/images/savv/2.png"],
   },
 ];
