@@ -4,6 +4,7 @@ import Link from "next/link";
 import github from "../../assets/icons/github.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
 import download from "../../assets/icons/download.svg";
+import ToggleTheme from "../ToggleTheme/ToggleTheme";
 
 export default function Header() {
   return (
@@ -45,6 +46,7 @@ export default function Header() {
             height={20}
           />
         </Link>
+        <ToggleTheme />
       </div>
     </header>
   );

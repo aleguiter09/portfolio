@@ -23,13 +23,13 @@
       .navbar__item {
         a {
           font-size: 0.8rem;
-          color: #333;
+          color: var(--color-text);
           font-weight: 600;
           text-decoration: none;
           transition: all 0.3s ease;
 
           &:hover {
-            color: gray;
+            color: var(--color-secondary);
           }
 
           @include md {
@@ -47,6 +47,10 @@
 
     a {
       transition: all 0.3s ease;
+
+      img {
+        filter: var(--color-svg);
+      }
 
       &:hover img {
         transition: all 0.3s ease;

@@ -62,18 +62,18 @@
         .project__button {
           width: 50%;
           text-align: center;
-          color: #333;
+          color: var(--color-text);
           text-decoration: none;
           transition: all 0.3s ease;
           cursor: pointer;
           padding: 0.5rem 1rem;
           border-radius: 0.5rem;
-          border: 1px solid gray;
+          border: 1px solid var(--color-secondary);
 
           &.primary {
             background-color: #2563eb;
             border: 0px;
-            color: white;
+            color: #f3f4f6;
           }
 
           &:hover {

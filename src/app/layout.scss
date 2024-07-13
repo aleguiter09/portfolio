@@ -1,9 +1,39 @@
+@import "./styles/variables";
+
+html[data-theme="light"] {
+  --color-text: #{$light-color};
+  --color-background: #{$light-bg};
+  --color-border: #{$light-border};
+  --color-secondary: #{$light-secondary};
+  --color-svg: #{$light-svg};
+}
+
+html[data-theme="dark"] {
+  --color-text: #{$dark-color};
+  --color-background: #{$dark-bg};
+  --color-border: #{$dark-border};
+  --color-secondary: #{$dark-secondary};
+  --color-svg: #{$dark-svg};
+}
+
 .layout {
   padding: 0;
-  background-color: #f3f4f6;
-  color: #111827;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: all 0.3s ease;
 
   .main {
     margin: 0 auto;
+  }
+
+  .toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    img {
+      filter: var(--color-svg);
+    }
   }
 }
