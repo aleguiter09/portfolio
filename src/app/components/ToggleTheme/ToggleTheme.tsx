@@ -25,9 +25,21 @@ export default function ToggleTheme() {
   return (
     <button className="toggle-button" onClick={handleClick}>
       {theme === "light" ? (
-        <Image src={moon.src} alt="moon-icon" width={20} height={20} />
+        <Image
+          className="gray-img"
+          src={moon.src}
+          alt="moon-icon"
+          width={20}
+          height={20}
+        />
       ) : (
-        <Image src={sun.src} alt="sun-icon" width={20} height={20} />
+        <Image
+          className="gray-img"
+          src={sun.src}
+          alt="sun-icon"
+          width={20}
+          height={20}
+        />
       )}
     </button>
   );

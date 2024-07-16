@@ -5,6 +5,7 @@ import github from "@/assets/icons/github.svg";
 import linkedin from "@/assets/icons/linkedin.svg";
 import download from "@/assets/icons/download.svg";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
+import ToggleLang from "../ToggleLang/ToggleLang";
 
 export default function Header() {
   return (
@@ -21,13 +22,20 @@ export default function Header() {
       </nav>
       <div className="external__icons">
         <Link href="https://github.com/aleguiter09" target="_blank">
-          <Image src={github.src} alt="github-icon" width={20} height={20} />
+          <Image
+            className="gray-img"
+            src={github.src}
+            alt="github-icon"
+            width={20}
+            height={20}
+          />
         </Link>
         <Link
           href="https://www.linkedin.com/in/alejandroguiter"
           target="_blank"
         >
           <Image
+            className="gray-img"
             src={linkedin.src}
             alt="linkedin-icon"
             width={20}
@@ -40,6 +48,7 @@ export default function Header() {
           download="Alejandro Guiter - CV"
         >
           <Image
+            className="gray-img"
             src={download.src}
             alt="download-icon"
             width={20}
@@ -47,6 +56,7 @@ export default function Header() {
           />
         </Link>
         <ToggleTheme />
+        <ToggleLang />
       </div>
     </header>
   );
