@@ -4,8 +4,11 @@ import Image from "next/image";
 import Tag from "../Tag/Tag";
 import { experiences } from "@/constants/experience";
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Experience() {
+  const t = useTranslations("Experience");
+
   useEffect(() => {
     const content = document.querySelectorAll(".experience__info");
 
@@ -30,7 +33,7 @@ export default function Experience() {
   return (
     <section id="experience" className="experience__section">
       <div className="experience">
-        <h3 className="experience__title">Experience</h3>
+        <h3 className="experience__title">{t("experience")}</h3>
         <ul className="experience__container">
           {experiences.map((experience, index) => {
             return (

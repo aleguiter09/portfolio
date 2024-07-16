@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import moon from "../../assets/icons/moon.svg";
-import sun from "../../assets/icons/sun.svg";
+import moon from "@/assets/icons/moon.svg";
+import sun from "@/assets/icons/sun.svg";
 import Image from "next/image";
 
 export default function ToggleTheme() {

@@ -1,7 +1,10 @@
+import { useTranslations } from "next-intl";
 import "./About.scss";
 import Image from "next/image";
 
 export default function About() {
+  const t = useTranslations("About");
+
   return (
     <section id="about" className="about">
       <Image
@@ -15,19 +18,19 @@ export default function About() {
         <h1 className="about__title">Alejandro Guiter</h1>
         <div className="about__portions">
           <div className="about__portion">
-            <span className="portion__main">+4 years</span>{" "}
-            <span className="portion__secondary">as Software Developer</span>
+            <span className="portion__main">+4 {t("years")}</span>
+            <span className="portion__secondary">{t("as")}</span>
           </div>
           <div className="about__portion">
-            <span className="portion__main">+15 projects</span>{" "}
-            <span className="portion__secondary">with worldwide companies</span>
+            <span className="portion__main">+15 {t("projects")}</span>
+            <span className="portion__secondary">{t("with")}</span>
           </div>
           <div className="about__portion">
-            <span className="portion__main">Based in</span>
-            <span className="portion__secondary">Madrid, Spain</span>
+            <span className="portion__main">{t("based")}</span>
+            <span className="portion__secondary">Madrid, {t("spain")}</span>
           </div>
           <div className="about__portion">
-            <span className="portion__main">Contact</span>
+            <span className="portion__main">{t("contact")}</span>
             <span className="portion__secondary">
               <a href="mailto:aleguiter9@gmail.com">aleguiter9@gmail.com</a>
             </span>

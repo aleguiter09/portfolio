@@ -1,9 +1,9 @@
 import "./Header.scss";
 import Image from "next/image";
 import Link from "next/link";
-import github from "../../assets/icons/github.svg";
-import linkedin from "../../assets/icons/linkedin.svg";
-import download from "../../assets/icons/download.svg";
+import github from "@/assets/icons/github.svg";
+import linkedin from "@/assets/icons/linkedin.svg";
+import download from "@/assets/icons/download.svg";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
 
 export default function Header() {
@@ -37,7 +37,7 @@ export default function Header() {
         <Link
           href="/files/aguiter-cv-english.pdf"
           target="_blank"
-          download={"Alejandro Guiter - CV"}
+          download="Alejandro Guiter - CV"
         >
           <Image
             src={download.src}
