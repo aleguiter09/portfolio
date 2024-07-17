@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Tag from "../../Tag/Tag";
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Project({
   id,
@@ -15,6 +16,8 @@ export default function Project({
   stack,
   images,
 }) {
+  const t = useTranslations("Projects");
+
   useEffect(() => {
     const content = document.querySelector(".project__images");
 
@@ -59,17 +62,17 @@ export default function Project({
               return <Tag key={stack} tag_key={stack} />;
             })}
           </div>
-          <p className="project__description">{description}</p>
+          <p className="project__description">{t(description)}</p>
           <div className="project__actions">
             <Link href={code_link} target="_blank" className="project__button">
-              Code
+              {t("code")}
             </Link>
             <Link
               href={link}
               target="_blank"
               className="project__button primary"
             >
-              Preview
+              {t("preview")}
             </Link>
           </div>
         </div>

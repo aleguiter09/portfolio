@@ -40,10 +40,10 @@ export default function Experience() {
               <li
                 className="experience__card"
                 key={experience.id}
-                data-date={`${experience.date}`}
+                data-date={`${t(experience.date)}`}
               >
                 <div className="experience__dot"></div>
-                <div className="experience__date">{experience.date}</div>
+                <div className="experience__date">{t(experience.date)}</div>
                 <div className="experience__info">
                   <Image
                     className="experience__image"
@@ -58,10 +58,10 @@ export default function Experience() {
                     </h4>
                     <div className="experience__data">
                       <span className="experience__at">
-                        @ {experience.company} - {experience.country}
+                        @ {experience.company} - {t(experience.country)}
                       </span>
                       <p className="experience__detail">
-                        {experience.description}
+                        {t(experience.description)}
                       </p>
                       <div className="experience__stack">
                         {experience.stack.map((stack) => {

@@ -6,17 +6,20 @@ import linkedin from "@/assets/icons/linkedin.svg";
 import download from "@/assets/icons/download.svg";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
 import ToggleLang from "../ToggleLang/ToggleLang";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
+  const t = useTranslations("Header");
+
   return (
     <header className="header">
       <nav className="navbar">
         <ul className="navbar__list">
           <li className="navbar__item">
-            <Link href="#about">About</Link>
+            <Link href="#about">{t("about")}</Link>
           </li>
           <li className="navbar__item">
-            <Link href="#projects">Projects</Link>
+            <Link href="#projects">{t("projects")}</Link>
           </li>
         </ul>
       </nav>

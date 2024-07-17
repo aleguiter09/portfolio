@@ -1,4 +1,8 @@
 {
+    "Header": {
+        "about": "Sobre mí",
+        "projects": "Proyectos"
+    },
     "About": {
         "years": "años",
         "as": "como Desarrollador",
@@ -9,6 +13,33 @@
         "spain": "España"
     },
     "Experience": {
-        "experience": "Experiencia"
+        "experience": "Experiencia",
+        "izertis": {
+            "date": "Oct 2023 - actualidad",
+            "country": "Madrid, España",
+            "description": "Actualmente trabajando como Desarrollador Frontend desarrollando y manteniendo múltiples aplicaciones web para un cliente en la industria de la moda."
+        },
+        "folder": {
+            "date": "Sep 2021 - Sep 2023",
+            "country": "Santa Fe, Argentina",
+            "description": "Desarrollé y mejoré tanto habilidades blandas como técnicas a través de diversos proyectos y tecnologías. Trabajé para clientes en la industria agrícola, e-commerce y finanzas."
+        },
+        "serfe": {
+            "date": "Abr 2021 - Sep 2021",
+            "country": "Santa Fe, Argentina",
+            "description": "Desarrollo, testing y mantenimiento de aplicaciones web. Trabajé en varios proyectos desde el inicio hasta el final tanto solo como con colegas de la empresa."
+        },
+        "utn": {
+            "date": "Jul 2020 - Dic 2020",
+            "country": "Santa Fe, Argentina",
+            "description": "Aplicación de técnicas de IA al diseño y análisis de procesos de negocio. A cargo de la investigación y desarrollo del proyecto."
+        }
+    },"Projects": {
+        "projects": "Proyectos",
+        "code": "Código",
+        "preview": "Preview",
+        "savv": {
+            "description": "Savv es una aplicación de seguimiento financiero que permite a los usuarios registrar y categorizar sus ingresos y gastos, y monitorear los saldos de las cuentas para facilitar la gestión y planificación del dinero."
+        }
     }
 }
