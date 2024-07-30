@@ -7,9 +7,7 @@ import { usePathname } from "next/navigation";
 
 export default function ToggleLang() {
   const pathname = usePathname();
-  const urlToRedirect = pathname?.includes("es")
-    ? window.location.href.replace("/es", "/en")
-    : window.location.href.replace("/en", "/es");
+  const urlToRedirect = pathname?.includes("es") ? "/en" : "/es";
 
   return (
     <Link href={urlToRedirect}>
