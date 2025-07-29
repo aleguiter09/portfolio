@@ -18,7 +18,7 @@ export default function About() {
         <h1 className="about__title">Alejandro Guiter</h1>
         <div className="about__portions">
           <div className="about__portion">
-            <span className="portion__main">+4 {t("years")}</span>
+            <span className="portion__main">+5 {t("years")}</span>
             <span className="portion__secondary">{t("as")}</span>
           </div>
           <div className="about__portion">

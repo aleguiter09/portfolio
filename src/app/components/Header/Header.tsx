@@ -6,10 +6,11 @@ import linkedin from "@/assets/icons/linkedin.svg";
 import download from "@/assets/icons/download.svg";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
 import ToggleLang from "../ToggleLang/ToggleLang";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Header() {
   const t = useTranslations("Header");
+  const locale = useLocale();
 
   return (
     <header className="header">
@@ -46,7 +47,7 @@ export default function Header() {
           />
         </Link>
         <Link
-          href="/files/aguiter-cv-english.pdf"
+          href={`/files/aguiter-cv-${locale}.pdf`}
           target="_blank"
           download="Alejandro Guiter - CV"
         >

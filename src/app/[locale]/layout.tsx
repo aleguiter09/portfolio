@@ -26,7 +26,7 @@ export default async function RootLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
-      <body className={`layout ${inter.className}`}>
+      <body className={`layout ${inter.className} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main className="main">{children}</main>

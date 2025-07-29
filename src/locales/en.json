@@ -1,46 +1,46 @@
 {
-    "Header": {
-        "about": "About",
-        "projects": "Projects"
+  "Header": {
+    "about": "About",
+    "projects": "Projects"
+  },
+  "About": {
+    "years": "years",
+    "as": "as Software Developer",
+    "projects": "projects",
+    "with": "with worldwide companies",
+    "based": "Based in",
+    "contact": "Contact",
+    "spain": "Spain"
+  },
+  "Experience": {
+    "experience": "Experience",
+    "izertis": {
+      "date": "Oct 2023 - May 2025",
+      "country": "Madrid, Spain",
+      "description": "I've improved my skills as a Frontend Developer working on the development and maintenance of multiple web applications for different clients in the fashion and medical industries."
     },
-    "About": {
-        "years": "years",
-        "as": "as Software Developer",
-        "projects": "projects",
-        "with": "with worldwide companies",
-        "based": "Based in",
-        "contact": "Contact",
-        "spain": "Spain"
+    "folder": {
+      "date": "Sep 2021 - Sep 2023",
+      "country": "Santa Fe, Argentina",
+      "description": "Developed and enhanced both soft and technical skills across diverse projects and technologies. Worked for clients in the agriculture industry, e-commerce and finances."
     },
-    "Experience": {
-        "experience": "Experience",
-        "izertis": {
-            "date": "Oct 2023 - present",
-            "country": "Madrid, Spain",
-            "description": "Currently working as a Frontend Developer developing and maintaining multiple web applications for a client in the fashion industry."
-        },
-        "folder": {
-            "date": "Sep 2021 - Sep 2023",
-            "country": "Santa Fe, Argentina",
-            "description": "Developed and enhanced both soft and technical skills across diverse projects and technologies. Worked for clients in the agriculture industry, e-commerce and finances."
-        },
-        "serfe": {
-            "date": "Apr 2021 - Sep 2021",
-            "country": "Santa Fe, Argentina",
-            "description": "Development, testing and maintenance of web applications. Worked on several amount of projects from start to finish both alone and in with colleagues of the company."
-        },
-        "utn": {
-            "date": "Jul 2020 - Dec 2020",
-            "country": "Santa Fe, Argentina",
-            "description": "Application of AI techniques to the design and analysis of business processes. In charge of the investigation and development of the project."
-        }
+    "serfe": {
+      "date": "Apr 2021 - Sep 2021",
+      "country": "Santa Fe, Argentina",
+      "description": "Development, testing and maintenance of web applications. Worked on several amount of projects from start to finish both alone and in with colleagues of the company."
     },
-    "Projects": {
-        "projects": "Projects",
-        "code": "Code",
-        "preview": "Preview",
-        "savv": {
-            "description": "Savv it's a finance tracking application that allows users to record and categorize their income and expenses, and monitor account balances to facilitate money management and planning."
-        }
+    "utn": {
+      "date": "Jul 2020 - Dec 2020",
+      "country": "Santa Fe, Argentina",
+      "description": "Application of AI techniques to the design and analysis of business processes. In charge of the investigation and development of the project."
     }
+  },
+  "Projects": {
+    "projects": "Projects",
+    "code": "Code",
+    "preview": "Preview",
+    "savv": {
+      "description": "Savv it's a finance tracking application that allows users to record and categorize their income and expenses, and monitor account balances to facilitate money management and planning."
+    }
+  }
 }
