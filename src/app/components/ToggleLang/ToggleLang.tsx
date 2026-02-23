@@ -1,22 +1,19 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import arg from "@/assets/icons/arg.svg";
-import usa from "@/assets/icons/usa.svg";
 import { usePathname } from "next/navigation";
 
 export default function ToggleLang() {
   const pathname = usePathname();
-  const urlToRedirect = pathname?.includes("es") ? "/en" : "/es";
+  const isSpanish = pathname?.includes("/es");
+  const urlToRedirect = isSpanish ? "/en" : "/es";
 
   return (
-    <Link href={urlToRedirect}>
-      <Image
-        src={pathname?.includes("es") ? usa.src : arg.src}
-        alt="flag-icon"
-        width={20}
-        height={20}
-      />
+    <Link
+      href={urlToRedirect}
+      className="text-sm font-medium text-muted transition-colors hover:text-foreground"
+      aria-label={isSpanish ? "Switch to English" : "Cambiar a Español"}
+    >
+      {isSpanish ? "EN" : "ES"}
     </Link>
   );
 }

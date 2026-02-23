@@ -1,8 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import moon from "@/assets/icons/moon.svg";
-import sun from "@/assets/icons/sun.svg";
-import Image from "next/image";
+import { Moon, Sun } from "lucide-react";
 
 export default function ToggleTheme() {
   const [theme, setTheme] = useState("light");
@@ -12,34 +10,22 @@ export default function ToggleTheme() {
   }, []);
 
   const handleClick = () => {
-    const theme = document.documentElement.getAttribute("data-theme");
-    if (theme === "dark") {
-      document.documentElement.setAttribute("data-theme", "light");
-      setTheme("light");
-    } else {
-      document.documentElement.setAttribute("data-theme", "dark");
-      setTheme("dark");
-    }
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    setTheme(next);
   };
 
   return (
-    <button className="toggle-button" onClick={handleClick}>
+    <button
+      onClick={handleClick}
+      className="cursor-pointer text-muted transition-colors hover:text-foreground"
+      aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+    >
       {theme === "light" ? (
-        <Image
-          className="gray-img"
-          src={moon.src}
-          alt="moon-icon"
-          width={20}
-          height={20}
-        />
+        <Moon size={18} strokeWidth={1.5} />
       ) : (
-        <Image
-          className="gray-img"
-          src={sun.src}
-          alt="sun-icon"
-          width={20}
-          height={20}
-        />
+        <Sun size={18} strokeWidth={1.5} />
       )}
     </button>
   );

@@ -1,20 +1,20 @@
 import "../globals.css";
-import "./layout.scss";
-import { Noto_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/next";
 
-const inter = Noto_Sans({
-  weight: "400",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata = {
   title: "Alejandro Guiter | Software Engineer",
-  description: "Alejandro Guiter's Porftolio",
+  description:
+    "Portfolio of Alejandro Guiter, a Software Engineer based in Madrid, Spain.",
   icons: {
     icon: ["/favicon.ico"],
     apple: ["apple-touch-icon.png"],
@@ -22,16 +22,29 @@ export const metadata = {
   },
 };
 
-export default async function RootLayout({ children, params: { locale } }) {
+export const viewport = {
+  themeColor: "#fafafa",
+};
+
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body className={`layout ${inter.className} antialiased`}>
+    <html lang={locale} className={inter.variable}>
+      <body className="bg-background text-foreground font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main className="main">{children}</main>
-          <Footer />
+          <div className="mx-auto max-w-2xl px-6">
+            <Header />
+            <main className="py-12">{children}</main>
+            <Footer />
+          </div>
         </NextIntlClientProvider>
         <Analytics />
       </body>

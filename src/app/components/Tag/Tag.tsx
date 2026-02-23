@@ -1,4 +1,4 @@
-import "./Tag.scss";
+import Image from "next/image";
 import react from "@/assets/icons/react.svg";
 import next from "@/assets/icons/next.svg";
 import tailwind from "@/assets/icons/tailwind.svg";
@@ -13,77 +13,34 @@ import wordpress from "@/assets/icons/wordpress.svg";
 import spacy from "@/assets/icons/spacy.svg";
 import research from "@/assets/icons/research.svg";
 import supabase from "@/assets/icons/supabase.svg";
-import Image from "next/image";
 
-const TAG = {
-  react: {
-    name: "React",
-    icon: react,
-  },
-  "react-native": {
-    name: "React Native",
-    icon: react,
-  },
-  next: {
-    name: "Next.js",
-    icon: next,
-  },
-  tailwind: {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  ts: {
-    name: "TypeScript",
-    icon: ts,
-  },
-  sass: {
-    name: "Sass",
-    icon: sass,
-  },
-  mongo: {
-    name: "MongoDB",
-    icon: mongo,
-  },
-  nest: {
-    name: "Nest.js",
-    icon: nest,
-  },
-  vue: {
-    name: "Vue.js",
-    icon: vue,
-  },
-  js: {
-    name: "JavaScript",
-    icon: js,
-  },
-  python: {
-    name: "Python",
-    icon: python,
-  },
-  wordpress: {
-    name: "WordPress",
-    icon: wordpress,
-  },
-  spacy: {
-    name: "spaCy",
-    icon: spacy,
-  },
-  research: {
-    name: "Research",
-    icon: research,
-  },
-  supabase: {
-    name: "Supabase",
-    icon: supabase,
-  },
+const TAG: Record<string, { name: string; icon: { src: string } }> = {
+  react: { name: "React", icon: react },
+  "react-native": { name: "React Native", icon: react },
+  next: { name: "Next.js", icon: next },
+  tailwind: { name: "Tailwind", icon: tailwind },
+  ts: { name: "TypeScript", icon: ts },
+  sass: { name: "Sass", icon: sass },
+  mongo: { name: "MongoDB", icon: mongo },
+  nest: { name: "Nest.js", icon: nest },
+  vue: { name: "Vue.js", icon: vue },
+  js: { name: "JavaScript", icon: js },
+  python: { name: "Python", icon: python },
+  wordpress: { name: "WordPress", icon: wordpress },
+  spacy: { name: "spaCy", icon: spacy },
+  research: { name: "Research", icon: research },
+  supabase: { name: "Supabase", icon: supabase },
 };
 
-export default function Tag({ tag_key }) {
-  const { name, icon } = TAG[tag_key];
+export default function Tag({ tag_key }: { tag_key: string }) {
+  const tag = TAG[tag_key];
+  if (!tag) return null;
+
+  const { name, icon } = tag;
 
   return (
-    <span className="tag_container">
-      <Image src={icon} alt={name} width={18} height={18} />
+    <span className="inline-flex items-center gap-1 rounded-full border border-tag-border bg-tag-bg px-2 py-0.5 text-xs text-muted">
+      <Image src={icon} alt={name} width={12} height={12} />
       {name}
     </span>
   );

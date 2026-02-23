@@ -1,39 +1,63 @@
 import { useTranslations } from "next-intl";
-import "./About.scss";
 import Image from "next/image";
+import { MapPin, Mail, Briefcase, FolderOpen } from "lucide-react";
 
 export default function About() {
   const t = useTranslations("About");
 
   return (
-    <section id="about" className="about">
-      <Image
-        className="about__image"
-        src="/images/me.jpg"
-        alt="profile"
-        width="150"
-        height="150"
-      />
-      <div className="about__text">
-        <h1 className="about__title">Alejandro Guiter</h1>
-        <div className="about__portions">
-          <div className="about__portion">
-            <span className="portion__main">+5 {t("years")}</span>
-            <span className="portion__secondary">{t("as")}</span>
+    <section id="about" className="pb-16">
+      <div className="flex flex-col items-start gap-6 opacity-0 animate-fade-in-up">
+        <div className="flex items-center gap-5">
+          <Image
+            className="rounded-full object-cover"
+            src="/images/me.jpg"
+            alt="Alejandro Guiter"
+            width={80}
+            height={80}
+            priority
+          />
+          <div>
+            <h1 className="text-2xl font-semibold tracking-tight text-balance">
+              Alejandro Guiter
+            </h1>
+            <p className="mt-1 text-sm text-muted">Software Engineer</p>
           </div>
-          <div className="about__portion">
-            <span className="portion__main">+15 {t("projects")}</span>
-            <span className="portion__secondary">{t("with")}</span>
-          </div>
-          <div className="about__portion">
-            <span className="portion__main">{t("based")}</span>
-            <span className="portion__secondary">Madrid, {t("spain")}</span>
-          </div>
-          <div className="about__portion">
-            <span className="portion__main">{t("contact")}</span>
-            <span className="portion__secondary">
-              <a href="mailto:aleguiter9@gmail.com">aleguiter9@gmail.com</a>
+        </div>
+
+        <div className="grid grid-cols-2 gap-x-8 gap-y-3 text-sm opacity-0 animate-fade-in-up animate-delay-200">
+          <div className="flex items-center gap-2 text-muted">
+            <Briefcase size={15} strokeWidth={1.5} />
+            <span>
+              <span className="font-medium text-foreground">
+                {"+"} 5 {t("years")}
+              </span>{" "}
+              {t("as")}
             </span>
+          </div>
+          <div className="flex items-center gap-2 text-muted">
+            <FolderOpen size={15} strokeWidth={1.5} />
+            <span>
+              <span className="font-medium text-foreground">
+                {"+"} 15 {t("projects")}
+              </span>{" "}
+              {t("with")}
+            </span>
+          </div>
+          <div className="flex items-center gap-2 text-muted">
+            <MapPin size={15} strokeWidth={1.5} />
+            <span>
+              Madrid, {t("spain")}
+            </span>
+          </div>
+          <div className="flex items-center gap-2 text-muted">
+            <Mail size={15} strokeWidth={1.5} />
+            <a
+              href="mailto:aleguiter9@gmail.com"
+              className="transition-colors hover:text-accent"
+            >
+              aleguiter9@gmail.com
+            </a>
           </div>
         </div>
       </div>
