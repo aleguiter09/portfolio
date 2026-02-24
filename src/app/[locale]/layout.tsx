@@ -42,7 +42,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <div className="mx-auto max-w-2xl px-6">
             <Header />
-            <main className="py-12">{children}</main>
+            <main>{children}</main>
             <Footer />
           </div>
         </NextIntlClientProvider>

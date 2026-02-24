@@ -43,7 +43,7 @@ export default function Project({
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
 
     observer.observe(el);
@@ -55,7 +55,7 @@ export default function Project({
       ref={containerRef}
       className="opacity-0 translate-y-4 transition-all duration-500 ease-out rounded-xl border border-border overflow-hidden"
     >
-      <div className="flex gap-2 overflow-x-auto p-3 bg-surface">
+      <div className="grid grid-cols-2 gap-2 overflow-x-auto p-3 bg-surface">
         {images.map((image: string, index: number) => (
           <Image
             key={alt + index}

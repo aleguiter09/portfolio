@@ -6,7 +6,7 @@ export default function About() {
   const t = useTranslations("About");
 
   return (
-    <section id="about" className="pb-16">
+    <section id="about" className="pb-8">
       <div className="flex flex-col items-start gap-6 opacity-0 animate-fade-in-up">
         <div className="flex items-center gap-5">
           <Image
@@ -46,9 +46,7 @@ export default function About() {
           </div>
           <div className="flex items-center gap-2 text-muted">
             <MapPin size={15} strokeWidth={1.5} />
-            <span>
-              Madrid, {t("spain")}
-            </span>
+            <span>Madrid, {t("spain")}</span>
           </div>
           <div className="flex items-center gap-2 text-muted">
             <Mail size={15} strokeWidth={1.5} />
