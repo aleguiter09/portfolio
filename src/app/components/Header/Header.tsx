@@ -23,6 +23,14 @@ export default function Header() {
             </li>
             <li>
               <Link
+                href="#experience"
+                className="text-sm text-muted transition-colors hover:text-foreground"
+              >
+                {t("experience")}
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="#projects"
                 className="text-sm text-muted transition-colors hover:text-foreground"
               >

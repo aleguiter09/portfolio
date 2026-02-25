@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { MapPin, Mail, Briefcase, FolderOpen } from "lucide-react";
+import { MapPin, Mail, Briefcase, Code2 } from "lucide-react";
 
 export default function About() {
   const t = useTranslations("About");
@@ -25,37 +25,42 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-x-8 gap-y-3 text-sm opacity-0 animate-fade-in-up animate-delay-200">
-          <div className="flex items-center gap-2 text-muted">
-            <Briefcase size={15} strokeWidth={1.5} />
-            <span>
-              <span className="font-medium text-foreground">
-                {"+"} 5 {t("years")}
-              </span>{" "}
-              {t("as")}
-            </span>
+        <div className="flex justify-between w-full text-sm opacity-0 animate-fade-in-up animate-delay-200">
+          <div className="flex flex-col  gap-2 text-muted">
+            <div className="flex items-center gap-2 text-muted">
+              <Briefcase size={15} strokeWidth={1.5} />
+              <span>
+                <span className="font-medium text-foreground">
+                  +5 {t("years")}
+                </span>{" "}
+                {t("as")}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2 text-muted">
+              <MapPin size={15} strokeWidth={1.5} />
+              <span>Madrid, {t("spain")}</span>
+            </div>
           </div>
-          <div className="flex items-center gap-2 text-muted">
-            <FolderOpen size={15} strokeWidth={1.5} />
-            <span>
-              <span className="font-medium text-foreground">
-                {"+"} 15 {t("projects")}
-              </span>{" "}
-              {t("with")}
-            </span>
-          </div>
-          <div className="flex items-center gap-2 text-muted">
-            <MapPin size={15} strokeWidth={1.5} />
-            <span>Madrid, {t("spain")}</span>
-          </div>
-          <div className="flex items-center gap-2 text-muted">
-            <Mail size={15} strokeWidth={1.5} />
-            <a
-              href="mailto:aleguiter9@gmail.com"
-              className="transition-colors hover:text-accent"
-            >
-              aleguiter9@gmail.com
-            </a>
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center gap-2 text-muted">
+              <Code2 size={15} strokeWidth={1.5} />
+              <span>
+                {t("especialized")}{" "}
+                <span className="font-medium text-foreground">
+                  Next.js, React & TypeScript
+                </span>
+              </span>
+            </div>
+            <div className="flex items-center gap-2 text-muted">
+              <Mail size={15} strokeWidth={1.5} />
+              <a
+                href="mailto:aleguiter9@gmail.com"
+                className="transition-colors hover:text-accent"
+              >
+                aleguiter9@gmail.com
+              </a>
+            </div>
           </div>
         </div>
       </div>

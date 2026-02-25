@@ -1,6 +1,7 @@
 {
   "Header": {
     "about": "About",
+    "experience": "Experience",
     "projects": "Projects"
   },
   "About": {
@@ -10,7 +11,8 @@
     "with": "with worldwide companies",
     "based": "Based in",
     "contact": "Contact",
-    "spain": "Spain"
+    "spain": "Spain",
+    "especialized": "Especialized in"
   },
   "Experience": {
     "experience": "Experience",

@@ -1,16 +1,18 @@
 {
   "Header": {
     "about": "Sobre mí",
+    "experience": "Experiencia",
     "projects": "Proyectos"
   },
   "About": {
     "years": "años",
-    "as": "como Desarrollador",
+    "as": "como Software Engineer",
     "projects": "proyectos",
     "with": "con empresas mundiales",
     "based": "Basado en",
     "contact": "Contacto",
-    "spain": "España"
+    "spain": "España",
+    "especialized": "Especializado en"
   },
   "Experience": {
     "experience": "Experiencia",
