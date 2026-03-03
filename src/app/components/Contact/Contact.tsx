@@ -9,7 +9,7 @@ export default function Contact() {
       <h2 className="mb-4 text-lg font-semibold tracking-tight">
         {t("title")}
       </h2>
-      <div className="flex flex-col items-center gap-4 rounded-xl border border-border bg-white p-4">
+      <div className="flex flex-col items-center gap-4 rounded-xl border border-border bg-white dark:bg-surface p-4">
         <p className="text-sm text-muted max-w-md">{t("description")}</p>
         <a
           href="mailto:aleguiter9@gmail.com"

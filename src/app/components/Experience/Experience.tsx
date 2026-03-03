@@ -16,7 +16,7 @@ export default function Experience() {
         {experiences.map((experience) => (
           <div
             key={experience.id}
-            className="border border-border rounded-xl p-6 bg-white"
+            className="border border-border rounded-xl p-6 bg-white dark:bg-surface"
           >
             <div className="flex flex-col gap-3">
               <div className="flex shrink-0 items-start gap-3">

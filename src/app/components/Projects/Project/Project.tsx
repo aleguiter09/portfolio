@@ -41,7 +41,7 @@ export default function Project({
         ))}
       </div>
 
-      <div className="p-5 bg-white">
+      <div className="p-5 bg-white dark:bg-surface">
         <h3 className="text-base font-semibold">{title}</h3>
         <p className="mt-2 text-sm leading-relaxed text-muted">
           {t(description)}
@@ -65,7 +65,7 @@ export default function Project({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-md bg-foreground px-3 py-1.5 text-xs font-medium text-white transition-colors hover:opacity-90"
+            className="inline-flex items-center gap-1.5 rounded-md bg-foreground px-3 py-1.5 text-xs font-medium text-background transition-colors hover:opacity-90"
           >
             <ExternalLink size={14} strokeWidth={1.5} />
             {t("preview")}
