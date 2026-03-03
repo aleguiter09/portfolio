@@ -17,6 +17,11 @@
   },
   "Experience": {
     "experience": "Experiencia",
+    "ciklum": {
+      "date": "Nov 2025 - Actualidad",
+      "country": "Madrid, España",
+      "description": "Actualmente trabajo como Desarrollador Frontend en Ciklum, donde continúo mejorando mis habilidades y contribuyendo al desarrollo de aplicaciones web para clientes en diversas industrias."
+    },
     "izertis": {
       "date": "Oct 2023 - May 2025",
       "country": "Madrid, España",

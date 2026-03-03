@@ -17,6 +17,11 @@
   },
   "Experience": {
     "experience": "Experience",
+    "ciklum": {
+      "date": "Nov 2025 - Present",
+      "country": "Madrid, Spain",
+      "description": "Currently working as a Frontend Engineer at Ciklum, where I continue to improve my skills and contribute to the development of web applications for clients in various industries."
+    },
     "izertis": {
       "date": "Oct 2023 - May 2025",
       "country": "Madrid, Spain",

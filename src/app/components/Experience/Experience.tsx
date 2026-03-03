@@ -12,7 +12,7 @@ export default function Experience() {
         {t("experience")}
       </h2>
 
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-4">
         {experiences.map((experience) => (
           <div
             key={experience.id}

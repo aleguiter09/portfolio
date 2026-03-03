@@ -7,7 +7,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="pb-8 scroll-mt-14">
-      <h2 className="mb-8 text-lg font-semibold tracking-tight">
+      <h2 className="mb-4 text-lg font-semibold tracking-tight">
         {t("projects")}
       </h2>
       <div className="flex flex-col gap-8">

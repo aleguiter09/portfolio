@@ -1,5 +1,16 @@
 export const experiences = [
   {
+    id: 5,
+    src: "/images/ciklum.jpg",
+    alt: "ciklum-logo",
+    position: "Frontend Engineer",
+    company: "Ciklum",
+    date: "ciklum.date",
+    country: "ciklum.country",
+    description: "ciklum.description",
+    stack: ["react", "next", "ts", "tailwind"],
+  },
+  {
     id: 1,
     src: "/images/izertis.jpg",
     alt: "izertis-logo",
