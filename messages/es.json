@@ -2,7 +2,8 @@
   "Header": {
     "about": "Sobre mí",
     "experience": "Experiencia",
-    "projects": "Proyectos"
+    "projects": "Proyectos",
+    "contact": "Contacto"
   },
   "About": {
     "years": "años",
@@ -44,5 +45,10 @@
     "savv": {
       "description": "Savv es una aplicación de seguimiento financiero que permite a los usuarios registrar y categorizar sus ingresos y gastos, y monitorear los saldos de las cuentas para facilitar la gestión y planificación del dinero."
     }
+  },
+  "Contact": {
+    "title": "Contacto",
+    "description": "No dudes en contactarme si estás buscando un desarrollador, tienes alguna pregunta o simplemente quieres charlar.",
+    "getInTouch": "Contactar"
   }
 }

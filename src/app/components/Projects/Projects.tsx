@@ -6,7 +6,7 @@ export default function Projects() {
   const t = useTranslations("Projects");
 
   return (
-    <section id="projects" className="pb-16">
+    <section id="projects" className="pb-8 scroll-mt-14">
       <h2 className="mb-8 text-lg font-semibold tracking-tight">
         {t("projects")}
       </h2>

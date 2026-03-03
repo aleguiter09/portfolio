@@ -1,12 +1,12 @@
-import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { MapPin, Mail, Briefcase, Code2 } from "lucide-react";
 
 export default function About() {
   const t = useTranslations("About");
 
   return (
-    <section id="about" className="pb-8">
+    <section id="about" className="pb-8 scroll-mt-24">
       <div className="flex flex-col items-start gap-6 opacity-0 animate-fade-in-up">
         <div className="flex items-center gap-5">
           <Image
@@ -25,8 +25,8 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex justify-between w-full text-sm opacity-0 animate-fade-in-up animate-delay-200">
-          <div className="flex flex-col  gap-2 text-muted">
+        <div className="flex flex-col md:flex-row gap-3 justify-between w-full text-sm opacity-0 animate-fade-in-up animate-delay-200">
+          <div className="flex flex-col gap-3 text-muted">
             <div className="flex items-center gap-2 text-muted">
               <Briefcase size={15} strokeWidth={1.5} />
               <span>
@@ -42,7 +42,7 @@ export default function About() {
               <span>Madrid, {t("spain")}</span>
             </div>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2 text-muted">
               <Code2 size={15} strokeWidth={1.5} />
               <span>

@@ -1,37 +1,13 @@
-"use client";
 import Image from "next/image";
 import Tag from "../Tag/Tag";
 import { experiences } from "@/constants/experience";
-import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 
 export default function Experience() {
   const t = useTranslations("Experience");
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-
-    const cards = section.querySelectorAll("[data-animate]");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.remove("opacity-0", "translate-y-4");
-            entry.target.classList.add("opacity-100", "translate-y-0");
-          }
-        });
-      },
-      { threshold: 0.15 },
-    );
-
-    cards.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
 
   return (
-    <section id="experience" ref={sectionRef} className="pb-10">
+    <section id="experience" className="pb-10 scroll-mt-14">
       <h2 className="mb-4 text-lg font-semibold tracking-tight">
         {t("experience")}
       </h2>
@@ -40,8 +16,7 @@ export default function Experience() {
         {experiences.map((experience) => (
           <div
             key={experience.id}
-            data-animate
-            className="opacity-0 translate-y-4 transition-all duration-500 ease-out border border-border rounded-xl p-6 bg-white"
+            className="border border-border rounded-xl p-6 bg-white"
           >
             <div className="flex flex-col gap-3">
               <div className="flex shrink-0 items-start gap-3">

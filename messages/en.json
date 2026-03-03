@@ -2,7 +2,8 @@
   "Header": {
     "about": "About",
     "experience": "Experience",
-    "projects": "Projects"
+    "projects": "Projects",
+    "contact": "Contact"
   },
   "About": {
     "years": "years",
@@ -44,5 +45,10 @@
     "savv": {
       "description": "Savv it's a finance tracking application that allows users to record and categorize their income and expenses, and monitor account balances to facilitate money management and planning."
     }
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "Feel free to reach out if you're looking for a developer, have a question, or just want to connect.",
+    "getInTouch": "Get in Touch"
   }
 }
