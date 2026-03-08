@@ -6,7 +6,6 @@ import ts from "@/assets/icons/ts.svg";
 import sass from "@/assets/icons/sass.svg";
 import mongo from "@/assets/icons/mongo.svg";
 import nest from "@/assets/icons/nest.svg";
-import vue from "@/assets/icons/vue.svg";
 import js from "@/assets/icons/js.svg";
 import python from "@/assets/icons/python.svg";
 import wordpress from "@/assets/icons/wordpress.svg";
@@ -23,7 +22,6 @@ const TAG: Record<string, { name: string; icon: { src: string } }> = {
   sass: { name: "Sass", icon: sass },
   mongo: { name: "MongoDB", icon: mongo },
   nest: { name: "Nest.js", icon: nest },
-  vue: { name: "Vue.js", icon: vue },
   js: { name: "JavaScript", icon: js },
   python: { name: "Python", icon: python },
   wordpress: { name: "WordPress", icon: wordpress },

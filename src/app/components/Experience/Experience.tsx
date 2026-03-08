@@ -16,7 +16,7 @@ export default function Experience() {
         {experiences.map((experience) => (
           <div
             key={experience.id}
-            className="border border-border rounded-xl p-6 bg-white dark:bg-surface"
+            className="border border-border rounded-xl p-4 md:p-6 bg-white dark:bg-surface"
           >
             <div className="flex flex-col gap-3">
               <div className="flex shrink-0 items-start gap-3">
@@ -39,9 +39,11 @@ export default function Experience() {
                 <p className="mt-0.5 text-xs text-muted">
                   {t(experience.date)}
                 </p>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {t(experience.description)}
-                </p>
+                <ul className="mt-2 text-sm flex flex-col gap-1 leading-relaxed text-muted list-disc pl-4">
+                  {experience.description.map((desc) => (
+                    <li key={desc}> {t(desc)} </li>
+                  ))}
+                </ul>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {experience.stack.map((tech) => (
                     <Tag key={tech} tag_key={tech} />

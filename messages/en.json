@@ -20,27 +20,32 @@
     "ciklum": {
       "date": "Nov 2025 - Present",
       "country": "Madrid, Spain",
-      "description": "Currently working as a Frontend Engineer at Ciklum, where I continue to improve my skills and contribute to the development of web applications for clients in various industries."
+      "description": "Developed and optimized scalable web applications for various industries.p",
+      "description2": "Focused on building high-performance interfaces, clean code, and reusable components using the React/Next.js ecosystem."
     },
     "izertis": {
       "date": "Oct 2023 - May 2025",
       "country": "Madrid, Spain",
-      "description": "I've improved my skills as a Frontend Developer working on the development and maintenance of multiple web applications for different clients in the fashion and medical industries."
+      "description": "Built and maintained frontend solutions for top-tier clients in the healthcare and fashion industries.",
+      "description2": "Ensured high code quality, web accessibility, and optimal performance for business-critical applications."
     },
     "folder": {
       "date": "Sep 2021 - Sep 2023",
       "country": "Santa Fe, Argentina",
-      "description": "Developed and enhanced both soft and technical skills across diverse projects and technologies. Worked for clients in the agriculture industry, e-commerce and finances."
+      "description": "Engineered full-stack software solutions for the agriculture, e-commerce, and finance sectors.",
+      "description2": "Participated in the full product lifecycle, developing robust architectures and collaborating with cross-functional teams."
     },
     "serfe": {
       "date": "Apr 2021 - Sep 2021",
       "country": "Santa Fe, Argentina",
-      "description": "Development, testing and maintenance of web applications. Worked on several amount of projects from start to finish both alone and in with colleagues of the company."
+      "description": "End-to-end development, testing, and maintenance of web applications for international clients.",
+      "description2": "Successfully delivered multiple projects from scratch, demonstrating high adaptability across different technologies including React, Python, and WordPress."
     },
     "utn": {
       "date": "Jul 2020 - Dec 2020",
       "country": "Santa Fe, Argentina",
-      "description": "Application of AI techniques to the design and analysis of business processes. In charge of the investigation and development of the project."
+      "description": "Researched and implemented AI and Natural Language Processing (NLP) techniques for business process analysis.",
+      "description2": "Developed automated solutions using Python and spaCy to enhance data-driven decision-making within the research department."
     }
   },
   "Projects": {
@@ -48,7 +53,7 @@
     "code": "Code",
     "preview": "Preview",
     "savv": {
-      "description": "Savv it's a finance tracking application that allows users to record and categorize their income and expenses, and monitor account balances to facilitate money management and planning."
+      "description": "A comprehensive finance tracking application that allows users to record income, categorize expenses, and monitor account balances. Implemented secure authentication and real-time database management using Supabase to deliver a seamless money management experience."
     }
   },
   "Contact": {

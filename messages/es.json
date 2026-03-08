@@ -20,27 +20,32 @@
     "ciklum": {
       "date": "Nov 2025 - Actualidad",
       "country": "Madrid, España",
-      "description": "Actualmente trabajo como Desarrollador Frontend en Ciklum, donde continúo mejorando mis habilidades y contribuyendo al desarrollo de aplicaciones web para clientes en diversas industrias."
+      "description": "Desarrollo y optimización de aplicaciones web escalables para diversas industrias bajo el ecosistema de React y Next.js.",
+      "description2": "Enfocado en la creación de interfaces de alto rendimiento, entrega de código limpio y desarrollo de componentes reutilizables."
     },
     "izertis": {
       "date": "Oct 2023 - May 2025",
       "country": "Madrid, España",
-      "description": "Afine mis habilidades como Desarrollador Frontend trabajando en el desarrollo y mantenimiento de múltiples aplicaciones web para distintos clientes en la industria de la moda y la medicina."
+      "description": "Construcción y mantenimiento de soluciones frontend para clientes de primer nivel en las industrias médica y de la moda.",
+      "description2": "Garantía de calidad de código, estándares de accesibilidad (WCAG) y rendimiento óptimo en aplicaciones críticas para el negocio."
     },
     "folder": {
       "date": "Sep 2021 - Sep 2023",
       "country": "Santa Fe, Argentina",
-      "description": "Desarrollé y mejoré tanto habilidades blandas como técnicas a través de diversos proyectos y tecnologías. Trabajé para clientes en la industria agrícola, e-commerce y finanzas."
+      "description": "Ingeniería de software full-stack para los sectores agrícola, e-commerce y finanzas, diseñando arquitecturas robustas.",
+      "description2": "Participación activa en todo el ciclo de vida del producto y colaboración estrecha en equipos multidisciplinarios."
     },
     "serfe": {
       "date": "Abr 2021 - Sep 2021",
       "country": "Santa Fe, Argentina",
-      "description": "Desarrollo, testing y mantenimiento de aplicaciones web. Trabajé en varios proyectos desde el inicio hasta el final tanto solo como con colegas de la empresa."
+      "description": "Desarrollo integral, testing y mantenimiento de aplicaciones web con entrega exitosa de proyectos de principio a fin.",
+      "description2": "Alta capacidad de adaptación técnica trabajando con diversos stacks tecnológicos como React, Python y WordPress."
     },
     "utn": {
       "date": "Jul 2020 - Dic 2020",
       "country": "Santa Fe, Argentina",
-      "description": "Aplicación de técnicas de IA al diseño y análisis de procesos de negocio. A cargo de la investigación y desarrollo del proyecto."
+      "description": "Investigación y aplicación de técnicas de IA y Procesamiento de Lenguaje Natural (NLP) para el análisis de procesos de negocio.",
+      "description2": "Desarrollo de soluciones automatizadas utilizando Python y spaCy para mejorar la toma de decisiones basada en datos."
     }
   },
   "Projects": {
@@ -48,7 +53,7 @@
     "code": "Código",
     "preview": "Preview",
     "savv": {
-      "description": "Savv es una aplicación de seguimiento financiero que permite a los usuarios registrar y categorizar sus ingresos y gastos, y monitorear los saldos de las cuentas para facilitar la gestión y planificación del dinero."
+      "description": "Savv es una aplicación de seguimiento financiero que permite a los usuarios registrar y categorizar sus transacciones asi como monitorear los saldos de sus cuentas para facilitar la gestión y planificación de su dinero."
     }
   },
   "Contact": {
