@@ -4,12 +4,21 @@ import Link from "next/link";
 import { Github, Linkedin, Download, Menu, X } from "lucide-react";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
 import ToggleLang from "../ToggleLang/ToggleLang";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
-export default function Header() {
+type HeaderProps = {
+  githubUrl: string;
+  linkedinUrl: string;
+  cvHref: string;
+};
+
+export default function Header({
+  githubUrl,
+  linkedinUrl,
+  cvHref,
+}: HeaderProps) {
   const t = useTranslations("Header");
-  const locale = useLocale();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const closeMenu = () => setIsMenuOpen(false);
@@ -25,7 +34,7 @@ export default function Header() {
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-          
+
           <nav className="hidden md:block">
             <ul className="flex items-center gap-6">
               <li>
@@ -66,7 +75,7 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <Link
-            href="https://github.com/aleguiter09"
+            href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:block text-muted transition-colors hover:text-foreground"
@@ -75,7 +84,7 @@ export default function Header() {
             <Github size={18} strokeWidth={1.5} />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/alejandroguiter"
+            href={linkedinUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:block text-muted transition-colors hover:text-foreground"
@@ -84,7 +93,7 @@ export default function Header() {
             <Linkedin size={18} strokeWidth={1.5} />
           </Link>
           <Link
-            href={`/files/aguiter-cv-${locale}.pdf`}
+            href={cvHref}
             target="_blank"
             download="Alejandro Guiter - CV"
             className="text-muted transition-colors hover:text-foreground"

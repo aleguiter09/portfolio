@@ -1,0 +1,17 @@
+title: Savv - Finance tracker
+order: 1
+link: https://savv-finances.vercel.app/
+codeLink: https://github.com/aleguiter09/savv
+logo: savv.png
+logoAlt: savv-logo
+description:
+  en: A comprehensive finance tracking application that allows users to record income, categorize expenses, and monitor account balances. Implemented secure authentication and real-time database management using Supabase to deliver a seamless money management experience.
+  es: Savv es una aplicación de seguimiento financiero que permite a los usuarios registrar y categorizar sus transacciones asi como monitorear los saldos de sus cuentas para facilitar la gestión y planificación de su dinero.
+stack:
+  - next
+  - tailwind
+  - ts
+  - supabase
+screenshots:
+  - 1.png
+  - 2.png

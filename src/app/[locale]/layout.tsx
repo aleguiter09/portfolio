@@ -3,12 +3,16 @@ import { Inter } from "next/font/google";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/next";
+import { getCvHref, getSite, type Locale } from "@/lib/content";
+import { routing } from "@/i18n/routing";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+  adjustFontFallback: true,
 });
 
 export const metadata = {
@@ -26,7 +30,11 @@ export const viewport = {
   themeColor: "#fafafa",
 };
 
-export default async function RootLayout({
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function LocaleLayout({
   children,
   params,
 }: {
@@ -34,16 +42,23 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const messages = await getMessages();
+  const site = await getSite();
+  const cvHref = getCvHref(site, locale as Locale);
 
   return (
     <html lang={locale} className={inter.variable}>
       <body className="bg-background text-foreground font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
           <div className="mx-auto max-w-2xl px-6">
-            <Header />
+            <Header
+              githubUrl={site.githubUrl}
+              linkedinUrl={site.linkedinUrl}
+              cvHref={cvHref}
+            />
             <main>{children}</main>
-            <Footer />
+            <Footer name={site.name} />
           </div>
         </NextIntlClientProvider>
         <Analytics />

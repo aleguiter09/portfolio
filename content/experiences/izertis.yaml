@@ -1,0 +1,21 @@
+company: Izertis
+position: Frontend Developer
+order: 4
+logo: izertis.jpg
+logoAlt: izertis-logo
+date:
+  en: Oct 2023 - May 2025
+  es: Oct 2023 - May 2025
+country:
+  en: Madrid, Spain
+  es: Madrid, España
+description:
+  - en: Built and maintained frontend solutions for top-tier clients in the healthcare and fashion industries.
+    es: Construcción y mantenimiento de soluciones frontend para clientes de primer nivel en las industrias médica y de la moda.
+  - en: Ensured high code quality, web accessibility, and optimal performance for business-critical applications.
+    es: Garantía de calidad de código, estándares de accesibilidad (WCAG) y rendimiento óptimo en aplicaciones críticas para el negocio.
+stack:
+  - react
+  - next
+  - ts
+  - sass

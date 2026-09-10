@@ -2,7 +2,27 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { MapPin, Mail, Briefcase, Code2 } from "lucide-react";
 
-export default function About() {
+type AboutProps = {
+  name: string;
+  role: string;
+  photoSrc: string;
+  photoAlt: string;
+  yearsExperience: number;
+  specialty: string;
+  locationCity: string;
+  email: string;
+};
+
+export default function About({
+  name,
+  role,
+  photoSrc,
+  photoAlt,
+  yearsExperience,
+  specialty,
+  locationCity,
+  email,
+}: AboutProps) {
   const t = useTranslations("About");
 
   return (
@@ -11,17 +31,18 @@ export default function About() {
         <div className="flex items-center gap-5">
           <Image
             className="rounded-full object-cover"
-            src="/images/me.jpg"
-            alt="Alejandro Guiter"
+            src={photoSrc}
+            alt={photoAlt}
             width={80}
             height={80}
+            sizes="80px"
             priority
           />
           <div>
             <h1 className="text-2xl font-semibold tracking-tight text-balance">
-              Alejandro Guiter
+              {name}
             </h1>
-            <p className="mt-1 text-sm text-muted">Software Engineer</p>
+            <p className="mt-1 text-sm text-muted">{role}</p>
           </div>
         </div>
 
@@ -31,7 +52,7 @@ export default function About() {
               <Briefcase size={15} strokeWidth={1.5} />
               <span>
                 <span className="font-medium text-foreground">
-                  +5 {t("years")}
+                  +{yearsExperience} {t("years")}
                 </span>{" "}
                 {t("as")}
               </span>
@@ -39,7 +60,9 @@ export default function About() {
 
             <div className="flex items-center gap-2 text-muted">
               <MapPin size={15} strokeWidth={1.5} />
-              <span>Madrid, {t("spain")}</span>
+              <span>
+                {locationCity}, {t("spain")}
+              </span>
             </div>
           </div>
           <div className="flex flex-col gap-3">
@@ -47,18 +70,16 @@ export default function About() {
               <Code2 size={15} strokeWidth={1.5} />
               <span>
                 {t("especialized")}{" "}
-                <span className="font-medium text-foreground">
-                  Next.js, React & TypeScript
-                </span>
+                <span className="font-medium text-foreground">{specialty}</span>
               </span>
             </div>
             <div className="flex items-center gap-2 text-muted">
               <Mail size={15} strokeWidth={1.5} />
               <a
-                href="mailto:aleguiter9@gmail.com"
+                href={`mailto:${email}`}
                 className="transition-colors hover:text-accent"
               >
-                aleguiter9@gmail.com
+                {email}
               </a>
             </div>
           </div>

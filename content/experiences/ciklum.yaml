@@ -1,0 +1,21 @@
+company: Ciklum
+position: Frontend Engineer
+order: 5
+logo: ciklum.jpg
+logoAlt: ciklum-logo
+date:
+  en: Nov 2025 - Present
+  es: Nov 2025 - Jul 2026
+country:
+  en: Madrid, Spain
+  es: Madrid, España
+description:
+  - en: Developed and optimized scalable web applications for various industries.
+    es: Desarrollo y optimización de aplicaciones web escalables para diversas industrias bajo el ecosistema de React y Next.js.
+  - en: Focused on building high-performance interfaces, clean code, and reusable components using the React/Next.js ecosystem.
+    es: Enfocado en la creación de interfaces de alto rendimiento, entrega de código limpio y desarrollo de componentes reutilizables.
+stack:
+  - react
+  - next
+  - ts
+  - tailwind
