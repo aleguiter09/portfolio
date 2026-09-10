@@ -38,7 +38,14 @@ export default function Tag({ tag_key }: { tag_key: string }) {
 
   return (
     <span className="inline-flex items-center gap-1 rounded-full border border-tag-border bg-tag-bg px-2 py-0.5 text-xs text-muted">
-      <Image src={icon.src} alt={name} width={12} height={12} />
+      <Image
+        src={icon.src}
+        alt=""
+        width={12}
+        height={12}
+        sizes="12px"
+        unoptimized
+      />
       {name}
     </span>
   );

@@ -36,16 +36,14 @@ export default function Project({
             alt={`${alt} screenshot ${index + 1}`}
             width={320}
             height={200}
-            sizes="(max-width: 640px) 80vw, 320px"
+            sizes="(max-width: 640px) 45vw, 320px"
           />
         ))}
       </div>
 
       <div className="p-5 bg-white dark:bg-surface">
         <h3 className="text-base font-semibold">{title}</h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted">
-          {t(description)}
-        </p>
+        <p className="mt-2 text-sm leading-relaxed text-muted">{description}</p>
         <div className="mt-3 flex flex-wrap gap-1.5">
           {stack.map((tech: string) => (
             <Tag key={tech} tag_key={tech} />

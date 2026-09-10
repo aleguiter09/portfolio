@@ -1,0 +1,22 @@
+company: Serfe
+position: Full Stack Developer
+order: 2
+logo: serfe.png
+logoAlt: serfe-logo
+date:
+  en: Apr 2021 - Sep 2021
+  es: Abr 2021 - Sep 2021
+country:
+  en: Santa Fe, Argentina
+  es: Santa Fe, Argentina
+description:
+  - en: End-to-end development, testing, and maintenance of web applications for international clients.
+    es: Desarrollo integral, testing y mantenimiento de aplicaciones web con entrega exitosa de proyectos de principio a fin.
+  - en: Successfully delivered multiple projects from scratch, demonstrating high adaptability across different technologies including React, Python, and WordPress.
+    es: Alta capacidad de adaptación técnica trabajando con diversos stacks tecnológicos como React, Python y WordPress.
+stack:
+  - react
+  - js
+  - python
+  - sass
+  - wordpress

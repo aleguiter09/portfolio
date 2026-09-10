@@ -1,0 +1,20 @@
+company: Universidad Tecnológica Nacional
+position: Intern R+D
+order: 1
+logo: utn.png
+logoAlt: utn-logo
+date:
+  en: Jul 2020 - Dec 2020
+  es: Jul 2020 - Dic 2020
+country:
+  en: Santa Fe, Argentina
+  es: Santa Fe, Argentina
+description:
+  - en: Researched and implemented AI and Natural Language Processing (NLP) techniques for business process analysis.
+    es: Investigación y aplicación de técnicas de IA y Procesamiento de Lenguaje Natural (NLP) para el análisis de procesos de negocio.
+  - en: Developed automated solutions using Python and spaCy to enhance data-driven decision-making within the research department.
+    es: Desarrollo de soluciones automatizadas utilizando Python y spaCy para mejorar la toma de decisiones basada en datos.
+stack:
+  - python
+  - spacy
+  - research

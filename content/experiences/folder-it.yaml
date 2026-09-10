@@ -1,0 +1,23 @@
+company: Folder IT
+position: Full Stack Developer
+order: 3
+logo: folderit.jpg
+logoAlt: folderit-logo
+date:
+  en: Sep 2021 - Sep 2023
+  es: Sep 2021 - Sep 2023
+country:
+  en: Santa Fe, Argentina
+  es: Santa Fe, Argentina
+description:
+  - en: Engineered full-stack software solutions for the agriculture, e-commerce, and finance sectors.
+    es: Ingeniería de software full-stack para los sectores agrícola, e-commerce y finanzas, diseñando arquitecturas robustas.
+  - en: Participated in the full product lifecycle, developing robust architectures and collaborating with cross-functional teams.
+    es: Participación activa en todo el ciclo de vida del producto y colaboración estrecha en equipos multidisciplinarios.
+stack:
+  - react
+  - react-native
+  - next
+  - ts
+  - mongo
+  - nest

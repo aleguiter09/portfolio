@@ -1,8 +1,18 @@
 import Project from "./Project/Project";
-import { projects } from "@/constants/projects";
 import { useTranslations } from "next-intl";
 
-export default function Projects() {
+export type ProjectItem = {
+  id: string;
+  alt: string;
+  link: string;
+  code_link: string;
+  title: string;
+  description: string;
+  stack: string[];
+  images: string[];
+};
+
+export default function Projects({ items }: { items: ProjectItem[] }) {
   const t = useTranslations("Projects");
 
   return (
@@ -11,7 +21,7 @@ export default function Projects() {
         {t("projects")}
       </h2>
       <div className="flex flex-col gap-8">
-        {projects.map((project) => (
+        {items.map((project) => (
           <Project key={project.id} {...project} />
         ))}
       </div>

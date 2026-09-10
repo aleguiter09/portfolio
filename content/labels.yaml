@@ -1,0 +1,50 @@
+header:
+  about:
+    en: About
+    es: Sobre mí
+  experience:
+    en: Experience
+    es: Experiencia
+  projects:
+    en: Projects
+    es: Proyectos
+  contact:
+    en: Contact
+    es: Contacto
+about:
+  years:
+    en: years
+    es: años
+  as:
+    en: as Software Engineer
+    es: como Software Engineer
+  spain:
+    en: Spain
+    es: España
+  especialized:
+    en: Especialized in
+    es: Especializado en
+experience:
+  title:
+    en: Experience
+    es: Experiencia
+projects:
+  title:
+    en: Projects
+    es: Proyectos
+  code:
+    en: Code
+    es: Código
+  preview:
+    en: Preview
+    es: Preview
+contact:
+  title:
+    en: Contact
+    es: Contacto
+  description:
+    en: Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+    es: No dudes en contactarme si estás buscando un desarrollador, tienes alguna pregunta o simplemente quieres charlar.
+  getInTouch:
+    en: Get in Touch
+    es: Contactar
