@@ -9,7 +9,7 @@ export type LocalizedString = { en: string; es: string };
 
 export function pickLocale(
   value: LocalizedString | null | undefined,
-  locale: Locale
+  locale: Locale,
 ): string {
   if (!value) return "";
   return value[locale] || value.en || "";
@@ -17,7 +17,7 @@ export function pickLocale(
 
 export function imageSrc(
   path: string | null | undefined,
-  publicPath: string
+  publicPath: string,
 ): string {
   if (!path) return "";
   if (path.startsWith("/")) return path;
@@ -48,7 +48,6 @@ export async function getMessagesForLocale(locale: Locale) {
       about: pickLocale(labels.header.about, locale),
       experience: pickLocale(labels.header.experience, locale),
       projects: pickLocale(labels.header.projects, locale),
-      contact: pickLocale(labels.header.contact, locale),
     },
     About: {
       years: pickLocale(labels.about.years, locale),
@@ -63,11 +62,6 @@ export async function getMessagesForLocale(locale: Locale) {
       projects: pickLocale(labels.projects.title, locale),
       code: pickLocale(labels.projects.code, locale),
       preview: pickLocale(labels.projects.preview, locale),
-    },
-    Contact: {
-      title: pickLocale(labels.contact.title, locale),
-      description: pickLocale(labels.contact.description, locale),
-      getInTouch: pickLocale(labels.contact.getInTouch, locale),
     },
   };
 }
@@ -86,7 +80,7 @@ export async function getExperiences(locale: Locale) {
       date: pickLocale(entry.date, locale),
       country: pickLocale(entry.country, locale),
       description: (entry.description || []).map((item) =>
-        pickLocale(item, locale)
+        pickLocale(item, locale),
       ),
       stack: [...(entry.stack || [])],
     }))
@@ -108,7 +102,7 @@ export async function getProjects(locale: Locale) {
       description: pickLocale(entry.description, locale),
       stack: [...(entry.stack || [])],
       images: (entry.screenshots || [])
-        .map((shot) => imageSrc(shot, "/images/savv/"))
+        .map((shot) => imageSrc(shot, "/images/margo/"))
         .filter(Boolean),
     }))
     .sort((a, b) => b.order - a.order);
@@ -116,7 +110,7 @@ export async function getProjects(locale: Locale) {
 
 export function getCvHref(
   site: Awaited<ReturnType<typeof getSite>>,
-  locale: Locale
+  locale: Locale,
 ): string {
   const file = locale === "es" ? site.cvEs : site.cvEn;
   const filename =

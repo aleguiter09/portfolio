@@ -61,14 +61,6 @@ export default function Header({
                   {t("projects")}
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="text-sm text-muted transition-colors hover:text-foreground"
-                >
-                  {t("contact")}
-                </Link>
-              </li>
             </ul>
           </nav>
         </div>
@@ -135,15 +127,6 @@ export default function Header({
                 className="text-lg font-medium text-muted transition-colors hover:text-foreground"
               >
                 {t("projects")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#contact"
-                onClick={closeMenu}
-                className="text-lg font-medium text-muted transition-colors hover:text-foreground"
-              >
-                {t("contact")}
               </Link>
             </li>
           </ul>

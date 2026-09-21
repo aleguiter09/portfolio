@@ -4,16 +4,22 @@ order: 5
 logo: ciklum.jpg
 logoAlt: ciklum-logo
 date:
-  en: Nov 2025 - Present
+  en: Nov 2025 - Jul 2026
   es: Nov 2025 - Jul 2026
 country:
   en: Madrid, Spain
   es: Madrid, España
 description:
-  - en: Developed and optimized scalable web applications for various industries.
-    es: Desarrollo y optimización de aplicaciones web escalables para diversas industrias bajo el ecosistema de React y Next.js.
-  - en: Focused on building high-performance interfaces, clean code, and reusable components using the React/Next.js ecosystem.
-    es: Enfocado en la creación de interfaces de alto rendimiento, entrega de código limpio y desarrollo de componentes reutilizables.
+  - en: Led the end-to-end legacy migration of a core web platform from Gatsby to Next.js, modernizing the tech stack and architecture.
+    es: Lideré la migración end-to-end de una plataforma web core de Gatsby a Next.js, modernizando el stack tecnológico y la arquitectura.
+  - en: Boosted Google Lighthouse scores from around 75 to 95+ across all metrics (Core Web Vitals, Performance, Accessibility, SEO) by leveraging SSR, static site generation, and aggressive asset optimization.
+    es: Subí los scores de Google Lighthouse de ~75 a 95+ en todas las métricas (Core Web Vitals, Performance, Accessibility, SEO) mediante SSR, generación estática y optimización agresiva de assets.
+  - en: Developed a modular UI component library integrated with Figma, driving design consistency and reusability for international client teams.
+    es: Desarrollé una librería modular de componentes UI integrada con Figma, impulsando consistencia de diseño y reutilización para equipos de clientes internacionales.
+  - en: Drastically reduced initial page load times (LCP/FCP) through route prefetching, code splitting, and optimized data-fetching patterns, improving overall user conversion.
+    es: Reduje drásticamente los tiempos de carga inicial (LCP/FCP) con prefetching de rutas, code splitting y patrones optimizados de data-fetching, mejorando la conversión de usuarios.
+  - en: Accelerated the legacy migration from Gatsby to Next.js by leveraging Cursor AI, custom prompt rules, and AI-driven workflows to streamline refactoring and component generation.
+    es: Aceleré la migración de Gatsby a Next.js aprovechando Cursor AI, reglas de prompt personalizadas y flujos con IA para agilizar el refactoring y la generación de componentes.
 stack:
   - react
   - next

@@ -1,7 +1,6 @@
 import About from "../components/About/About";
 import Experience from "../components/Experience/Experience";
 import Projects from "../components/Projects/Projects";
-import Contact from "../components/Contact/Contact";
 import {
   getExperiences,
   getProjects,
@@ -40,7 +39,6 @@ export default async function HomePage({
       />
       <Experience items={experiences} />
       <Projects items={projects} />
-      <Contact email={site.email} />
     </>
   );
 }

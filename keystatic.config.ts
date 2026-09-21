@@ -10,7 +10,7 @@ const localizedText = (label: string, multiline = false) =>
         ? fields.text({ label: "Spanish", multiline: true })
         : fields.text({ label: "Spanish" }),
     },
-    { label }
+    { label },
   );
 
 const STACK_OPTIONS = [
@@ -77,9 +77,8 @@ export default config({
             about: localizedText("About"),
             experience: localizedText("Experience"),
             projects: localizedText("Projects"),
-            contact: localizedText("Contact"),
           },
-          { label: "Header" }
+          { label: "Header" },
         ),
         about: fields.object(
           {
@@ -88,13 +87,13 @@ export default config({
             spain: localizedText("Spain / country label"),
             especialized: localizedText("Specialized in"),
           },
-          { label: "About" }
+          { label: "About" },
         ),
         experience: fields.object(
           {
             title: localizedText("Section title"),
           },
-          { label: "Experience" }
+          { label: "Experience" },
         ),
         projects: fields.object(
           {
@@ -102,15 +101,7 @@ export default config({
             code: localizedText("Code button"),
             preview: localizedText("Preview button"),
           },
-          { label: "Projects" }
-        ),
-        contact: fields.object(
-          {
-            title: localizedText("Section title"),
-            description: localizedText("Description", true),
-            getInTouch: localizedText("CTA"),
-          },
-          { label: "Contact" }
+          { label: "Projects" },
         ),
       },
     }),
@@ -136,14 +127,11 @@ export default config({
         logoAlt: fields.text({ label: "Logo alt" }),
         date: localizedText("Date range"),
         country: localizedText("Location"),
-        description: fields.array(
-          localizedText("Bullet", true),
-          {
-            label: "Description bullets",
-            itemLabel: (props) =>
-              props.fields.en.value || props.fields.es.value || "Bullet",
-          }
-        ),
+        description: fields.array(localizedText("Bullet", true), {
+          label: "Description bullets",
+          itemLabel: (props) =>
+            props.fields.en.value || props.fields.es.value || "Bullet",
+        }),
         stack: fields.multiselect({
           label: "Stack",
           options: [...STACK_OPTIONS],
@@ -177,13 +165,13 @@ export default config({
         screenshots: fields.array(
           fields.image({
             label: "Screenshot",
-            directory: "public/images/savv",
-            publicPath: "/images/savv/",
+            directory: "public/images/margo",
+            publicPath: "/images/margo/",
           }),
           {
             label: "Screenshots",
             itemLabel: () => "Screenshot",
-          }
+          },
         ),
       },
     }),

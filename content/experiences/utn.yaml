@@ -11,9 +11,9 @@ country:
   es: Santa Fe, Argentina
 description:
   - en: Researched and implemented AI and Natural Language Processing (NLP) techniques for business process analysis.
-    es: Investigación y aplicación de técnicas de IA y Procesamiento de Lenguaje Natural (NLP) para el análisis de procesos de negocio.
+    es: Investigué e implementé técnicas de IA y Procesamiento de Lenguaje Natural (NLP) para el análisis de procesos de negocio.
   - en: Developed automated solutions using Python and spaCy to enhance data-driven decision-making within the research department.
-    es: Desarrollo de soluciones automatizadas utilizando Python y spaCy para mejorar la toma de decisiones basada en datos.
+    es: Desarrollé soluciones automatizadas con Python y spaCy para mejorar la toma de decisiones basada en datos dentro del departamento de investigación.
 stack:
   - python
   - spacy

@@ -10,10 +10,14 @@ country:
   en: Santa Fe, Argentina
   es: Santa Fe, Argentina
 description:
-  - en: Engineered full-stack software solutions for the agriculture, e-commerce, and finance sectors.
-    es: Ingeniería de software full-stack para los sectores agrícola, e-commerce y finanzas, diseñando arquitecturas robustas.
-  - en: Participated in the full product lifecycle, developing robust architectures and collaborating with cross-functional teams.
-    es: Participación activa en todo el ciclo de vida del producto y colaboración estrecha en equipos multidisciplinarios.
+  - en: Architected and developed end-to-end features for a large-scale agricultural microservices platform using React, NestJS, Typescript and MongoDB, managing real-time data streaming from field machinery.
+    es: Arquitecté y desarrollé features end-to-end para una plataforma de microservicios agrícola a gran escala con React, NestJS, TypeScript y MongoDB, gestionando streaming de datos en tiempo real desde maquinaria de campo.
+  - en: Optimized database performance by restructuring MongoDB queries and indexing strategy, reducing load times significantly and shifting high-overhead operations from memory to disk.
+    es: Optimicé el rendimiento de la base de datos reestructurando queries e índices de MongoDB, reduciendo tiempos de carga de forma significativa y moviendo operaciones costosas de memoria a disco.
+  - en: Enhanced client-side performance and UX through frontend code-splitting, lazy loading, and route prefetching, drastically reducing initial page load times on complex dashboards.
+    es: Mejoré el rendimiento client-side y la UX con code-splitting, lazy loading y prefetching de rutas, reduciendo drásticamente los tiempos de carga inicial en dashboards complejos.
+  - en: Led technical discovery and client communication for a US-based client, defining architecture, requirements, cost-benefit analysis for Microsoft cloud services, and delivering the MVP from scratch.
+    es: Lideré el discovery técnico y la comunicación con un cliente de EE.UU., definiendo arquitectura, requisitos y análisis costo-beneficio de servicios cloud de Microsoft, y entregando el MVP desde cero.
 stack:
   - react
   - react-native

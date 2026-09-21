@@ -10,10 +10,10 @@ country:
   en: Santa Fe, Argentina
   es: Santa Fe, Argentina
 description:
-  - en: End-to-end development, testing, and maintenance of web applications for international clients.
-    es: Desarrollo integral, testing y mantenimiento de aplicaciones web con entrega exitosa de proyectos de principio a fin.
-  - en: Successfully delivered multiple projects from scratch, demonstrating high adaptability across different technologies including React, Python, and WordPress.
-    es: Alta capacidad de adaptación técnica trabajando con diversos stacks tecnológicos como React, Python y WordPress.
+  - en: Delivered 10+ web applications end-to-end for international clients using React and WordPress, taking full ownership of production deployments and client communication.
+    es: Entregué más de 10 aplicaciones web end-to-end para clientes internacionales con React y WordPress, asumiendo la propiedad completa de deploys a producción y comunicación con el cliente.
+  - en: Engineered scalable frontend components and features independently under tight deadlines, ensuring high code quality and fast delivery cycles in a high-autonomy environment.
+    es: Desarrollé componentes y features frontend escalables de forma independiente bajo deadlines ajustados, asegurando alta calidad de código y ciclos de entrega rápidos en un entorno de alta autonomía.
 stack:
   - react
   - js

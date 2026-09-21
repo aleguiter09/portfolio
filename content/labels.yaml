@@ -8,9 +8,6 @@ header:
   projects:
     en: Projects
     es: Proyectos
-  contact:
-    en: Contact
-    es: Contacto
 about:
   years:
     en: years
@@ -38,13 +35,3 @@ projects:
   preview:
     en: Preview
     es: Preview
-contact:
-  title:
-    en: Contact
-    es: Contacto
-  description:
-    en: Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
-    es: No dudes en contactarme si estás buscando un desarrollador, tienes alguna pregunta o simplemente quieres charlar.
-  getInTouch:
-    en: Get in Touch
-    es: Contactar

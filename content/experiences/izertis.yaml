@@ -10,10 +10,18 @@ country:
   en: Madrid, Spain
   es: Madrid, España
 description:
-  - en: Built and maintained frontend solutions for top-tier clients in the healthcare and fashion industries.
-    es: Construcción y mantenimiento de soluciones frontend para clientes de primer nivel en las industrias médica y de la moda.
-  - en: Ensured high code quality, web accessibility, and optimal performance for business-critical applications.
-    es: Garantía de calidad de código, estándares de accesibilidad (WCAG) y rendimiento óptimo en aplicaciones críticas para el negocio.
+  - en: Architected greenfield frontend solutions for health-tech and enterprise fashion clients using React, Next.js, and TypeScript, establishing foundational project structures and coding standards.
+    es: Arquitecté soluciones frontend greenfield para clientes de health-tech y moda enterprise con React, Next.js y TypeScript, definiendo estructuras de proyecto y estándares de código.
+  - en: Designed and built a custom reusable component library aligned with Figma design systems, accelerating UI development across cross-functional product teams.
+    es: Diseñé y construí una librería de componentes reutilizables alineada con sistemas de diseño de Figma, acelerando el desarrollo UI en equipos de producto multidisciplinares.
+  - en: Engineered dynamic landing page generators for high-traffic seasonal marketing campaigns (Black Friday, product launches), enabling rapid content creation and seamless CMS integration.
+    es: Desarrollé generadores dinámicos de landings para campañas de marketing estacionales de alto tráfico (Black Friday, lanzamientos), permitiendo creación rápida de contenido e integración con CMS.
+  - en: Optimized heavy dataset visualizations and complex dashboards, enhancing client-side rendering performance, state management, and user experience.
+    es: Optimicé visualizaciones de datasets pesados y dashboards complejos, mejorando el rendimiento de renderizado client-side, el state management y la experiencia de usuario.
+  - en: Guaranteed high SEO standards and WCAG compliance, strictly enforcing Pixel-Perfect UI patterns and web accessibility best practices for global brand campaigns.
+    es: Garantizé altos estándares de SEO y cumplimiento WCAG, aplicando patrones Pixel-Perfect y buenas prácticas de accesibilidad web en campañas de marcas globales.
+  - en: Integrated GitHub Copilot into daily development workflows to speed up boilerplate code generation, component testing, and architectural refactoring.
+    es: Integré GitHub Copilot en el flujo diario de desarrollo para acelerar la generación de boilerplate, testing de componentes y refactoring arquitectónico.
 stack:
   - react
   - next
